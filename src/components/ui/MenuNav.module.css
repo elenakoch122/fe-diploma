@@ -1,0 +1,21 @@
+.nav {
+  padding: 25px 0;
+  background-color: #292929;
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 80px;
+}
+
+.nav__link {
+  font-family: "Roboto Light";
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
+  text-decoration: none;
+}

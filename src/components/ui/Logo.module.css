@@ -1,0 +1,25 @@
+.logo {
+  position: relative;
+}
+
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.logo__link {
+  z-index: 3;
+  position: relative;
+  display: block;
+  padding-top: 15px;
+  font-family: "Roboto Black";
+  font-size: 36px;
+  line-height: 42px;
+  color: #E5E5E5;
+  text-decoration: none;
+}

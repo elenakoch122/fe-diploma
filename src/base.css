@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.wrapper {
+  /* width: 1430px; */
+  margin: 0 12.7%;
+}
+
+input {
+  position: relative;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  /* line-height: 21px; */
+  color: #292929;
+  border: none;
+  cursor: text;
+}
+
+input:focus {
+  outline: none;
+}
+
+/*input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder,
+input:-ms-input-placeholder,*/
+input::placeholder {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 21px;
+  color: #E5E5E5;
+}
+
+input::-webkit-calendar-picker-indicator {
+  width: 30px;
+  height: 34px;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  background-image: url(./assets/images/icon_calendar.png);
+  background-size: cover;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+}

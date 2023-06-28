@@ -51,3 +51,18 @@
 .form__button__wrapper {
   text-align: right;
 }
+
+.dateTooltip {
+  position: relative;
+}
+
+.dateTooltip::after {
+  content: 'ДД/ММ/ГГ';
+  position: absolute;
+  top: 19px;
+  left: 21px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #E5E5E5;
+  background-color: #fff;
+}

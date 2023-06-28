@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import inputReduser from '../slices/input';
+import dateReduser from '../slices/date';
 
 export const store = configureStore({
   reducer: {
-    input: inputReduser,
+    date: dateReduser,
   },
 });

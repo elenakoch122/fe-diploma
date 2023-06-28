@@ -2,31 +2,29 @@ import Button from '../ui/Button';
 import style from './SearchTicketForm.module.css';
 import reverseIcon from '../../assets/images/icon_reverse_white.png';
 import { useDispatch, useSelector } from 'react-redux';
-import { setTypeDate, setTypeText, setValue, setValueFrom, setValueTo } from '../../slices/input';
+import { useState } from 'react';
+import { setInitialFromTo, setValue } from '../../slices/date';
+import moment from 'moment';
 
 export default function SearchTicketForm() {
-  const { from, to } = useSelector(state => state.input);
+  const { from, to } = useSelector(state => state.date);
+  const [classesFromTo, setClassesFromTo] = useState(`${style.form__input} ${style.dateTooltip}`);
   const dispatch = useDispatch();
 
-  const onFocusHandler = (e) => {
-    dispatch(setTypeDate({ type: e.target.type, value: e.target.value, id: e.target.id }));
-  };
+  const onFocusHandler = () => setClassesFromTo(style.form__input);
 
   const onBlurHandler = (e) => {
-    dispatch(setTypeText({ value: e.target.value, id: e.target.id }));
+    if (!e.target.value) {
+      setClassesFromTo(`${style.form__input} ${style.dateTooltip}`);
+      dispatch(setInitialFromTo());
+    };
   };
 
   const onChangeHandler = (e) => {
     dispatch(setValue({ value: e.target.value, id: e.target.id }));
   };
 
-  // const onChangeFrom = (e) => {
-  //   dispatch(setValueFrom(e.target.value));
-  // };
-
-  // const onChangeTo = (e) => {
-  //   dispatch(setValueTo(e.target.value));
-  // };
+  const checkDate = () => moment(to).isAfter(from);
 
   return (
     <form className={style.form}>
@@ -39,9 +37,9 @@ export default function SearchTicketForm() {
 
       <label className={style.form__label} htmlFor="dateFrom">Дата</label>
       <div className={`${style.form__fields} ${style.date}`}>
-        <input className={style.form__input} type={from.type} id="dateFrom" placeholder="ДД/ММ/ГГ" value={from.value} onFocus={onFocusHandler} onBlur={onBlurHandler} onChange={onChangeHandler} required />
+        <input className={classesFromTo} type="date" id="dateFrom" value={from} min={moment().format('YYYY-MM-DD')} onFocus={onFocusHandler} onBlur={onBlurHandler} onChange={onChangeHandler} required />
 
-        <input className={style.form__input} type={to.type} id="dateTo" placeholder="ДД/ММ/ГГ" value={to.value} onFocus={onFocusHandler} onBlur={onBlurHandler} onChange={onChangeHandler} required />
+        <input className={classesFromTo} type="date" id="dateTo" value={checkDate() ? to : from} min={from} onFocus={onFocusHandler} onBlur={onBlurHandler} onChange={onChangeHandler} required />
       </div>
 
       <div className={style.form__button__wrapper}>

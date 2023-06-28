@@ -2,10 +2,10 @@ import Button from '../ui/Button';
 import style from './SearchTicketForm.module.css';
 import reverseIcon from '../../assets/images/icon_reverse_white.png';
 import { useDispatch, useSelector } from 'react-redux';
-import { setTypeDate, setTypeText, setValueFrom } from '../../slices/input';
+import { setTypeDate, setTypeText, setValue, setValueFrom, setValueTo } from '../../slices/input';
 
 export default function SearchTicketForm() {
-  const { type, value } = useSelector(state => state.input);
+  const { from, to } = useSelector(state => state.input);
   const dispatch = useDispatch();
 
   const onFocusHandler = (e) => {
@@ -13,12 +13,20 @@ export default function SearchTicketForm() {
   };
 
   const onBlurHandler = (e) => {
-    dispatch(setTypeText(e.target.value));
+    dispatch(setTypeText({ value: e.target.value, id: e.target.id }));
   };
 
-  const onChangeFrom = (e) => {
-    dispatch(setValueFrom(e.target.value));
+  const onChangeHandler = (e) => {
+    dispatch(setValue({ value: e.target.value, id: e.target.id }));
   };
+
+  // const onChangeFrom = (e) => {
+  //   dispatch(setValueFrom(e.target.value));
+  // };
+
+  // const onChangeTo = (e) => {
+  //   dispatch(setValueTo(e.target.value));
+  // };
 
   return (
     <form className={style.form}>
@@ -31,9 +39,9 @@ export default function SearchTicketForm() {
 
       <label className={style.form__label} htmlFor="dateFrom">Дата</label>
       <div className={`${style.form__fields} ${style.date}`}>
-        <input className={style.form__input} type={type} id="dateFrom" placeholder="ДД/ММ/ГГ" value={value} onFocus={onFocusHandler} onBlur={onBlurHandler} onChange={onChangeFrom} required />
+        <input className={style.form__input} type={from.type} id="dateFrom" placeholder="ДД/ММ/ГГ" value={from.value} onFocus={onFocusHandler} onBlur={onBlurHandler} onChange={onChangeHandler} required />
 
-        <input className={style.form__input} type={type} id="dateTo" placeholder="ДД/ММ/ГГ" value={value} onFocus={onFocusHandler} onBlur={onBlurHandler} onChange={onChangeTo} required />
+        <input className={style.form__input} type={to.type} id="dateTo" placeholder="ДД/ММ/ГГ" value={to.value} onFocus={onFocusHandler} onBlur={onBlurHandler} onChange={onChangeHandler} required />
       </div>
 
       <div className={style.form__button__wrapper}>

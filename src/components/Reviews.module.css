@@ -1,0 +1,12 @@
+.reviews {
+  padding: 152px 0 122px;
+}
+
+.reviews__title {
+  margin-bottom: 75px;
+  font-family: "Roboto Medium";
+  font-size: 36px;
+  font-size: 36px;
+  color: #292929;
+  text-transform: uppercase;
+}

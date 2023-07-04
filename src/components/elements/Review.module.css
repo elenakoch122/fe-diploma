@@ -1,0 +1,46 @@
+.review {
+  display: flex;
+  align-items: center;
+}
+
+.review__img {
+  margin-right: 35px;
+  border-radius: 50%;
+}
+
+.review__reviewer {
+  margin-bottom: 20px;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  color: #000;
+}
+
+.review__text {
+  position: relative;
+  font-family: "Roboto Italic";
+  font-size: 18px;
+  color: #928F94;
+}
+
+.review__text::before {
+  content: '“';
+  top: -8px;
+  left: -15px;
+}
+
+.review__text__span {
+  position: relative;
+}
+
+.review__text__span::after {
+  content: '”';
+  top: 5px;
+  right: -25px;
+}
+
+.review__text::before, .review__text__span::after {
+  position: absolute;
+  font-family: "Roboto Medium";
+  font-size: 36px;
+  color: #928F94;
+}

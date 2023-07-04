@@ -1,15 +1,17 @@
-import Header from '../components/blocks/Header';
-import SearchTicketForm from '../components/elements/SearchTicketForm';
-import style from './MainPage.module.css'
+import About from '../components/About';
+import Advantages from '../components/Advantages';
+import Footer from '../components/Footer';
+import Main from '../components/Main';
+import Reviews from '../components/Reviews';
 
 export default function MainPage() {
   return (
-    <main className={style.main}>
-      <Header />
-      <div className={style.main__content}>
-        <p className={style.main__contentTagline}>Вся жизнь - <em>путешествие!</em></p>
-        <SearchTicketForm />
-      </div>
-    </main>
+    <>
+      <Main />
+      <About />
+      <Advantages />
+      <Reviews />
+      <Footer />
+    </>
   );
 }

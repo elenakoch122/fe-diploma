@@ -1,5 +1,5 @@
 .nav {
-  padding: 25px 0;
+  padding: 30px 0;
   background-color: #292929;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .nav__item:not(:last-child) {
-  margin-right: 80px;
+  margin-right: 87px;
 }
 
 .nav__link {

@@ -29,6 +29,16 @@
 }
 
 @font-face {
+  font-family: "Roboto Italic"; /*400 Italic*/
+  src: local("Roboto Italic"),
+    local("Roboto-Italic"),
+    url("./Roboto-Italic.woff") format("woff"),
+    url("./Roboto-Italic.ttf") format("truetype"),
+    url("./Roboto-Italic.eot") format("embedded-opentype");
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Roboto Medium"; /*500*/
   src: local("Roboto Medium"),
     local("Roboto-Medium"),

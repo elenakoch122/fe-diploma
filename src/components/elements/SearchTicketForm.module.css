@@ -31,8 +31,8 @@
 
 .form__input {
   width: 325px;
-  padding: 19px 21px;
-  border-radius: 3px;
+  /* padding: 19px 21px;
+  border-radius: 3px; */
 }
 
 .direction {

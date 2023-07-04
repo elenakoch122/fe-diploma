@@ -1,0 +1,21 @@
+.subEmail {
+  margin-bottom: 44px;
+}
+
+.subEmail__label {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #E5E5E5;
+}
+
+.subEmail__input {
+  width: 447px;
+  margin-right: 33px;
+  padding-top: 24px;
+}
+
+.subEmail__input::placeholder {
+  font-size: 24px;
+}

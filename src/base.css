@@ -5,18 +5,14 @@
   color: #fff;
 }
 
-.wrapper {
-  /* width: 1430px; */
-  margin: 0 12.7%;
-}
-
 input {
   position: relative;
+  padding: 19px 21px;
   font-family: "Roboto Regular";
   font-size: 18px;
-  /* line-height: 21px; */
   color: #292929;
   border: none;
+  border-radius: 3px;
   cursor: text;
 }
 
@@ -46,6 +42,20 @@ input::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 button {
   border: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
 }

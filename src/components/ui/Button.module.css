@@ -8,3 +8,14 @@
   border-radius: 5px;
   text-transform: uppercase;
 }
+
+.black {
+  padding: 15px 15px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #E5E5E5;
+  background-color: #2D2B2F;
+  border: 1px solid #FFF;
+  border-radius: 3px;
+  text-transform: uppercase;
+}

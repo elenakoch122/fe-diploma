@@ -1,3 +1,23 @@
 .footer {
   background-color: #2D2B2F;
 }
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 49px 17.7% 52px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0 33px;
+}
+
+.footer__year {
+  font-family: "Roboto Light";
+  font-size: 24px;
+  color: #E5E5E5;
+}

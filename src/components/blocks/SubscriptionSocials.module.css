@@ -1,0 +1,7 @@
+.subSocials__list {
+  display: flex;
+}
+
+.subSocials__item:not(:last-child) {
+  margin-right: 48px;
+}

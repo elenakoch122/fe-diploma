@@ -1,0 +1,44 @@
+.contacts__title {
+  margin-bottom: 35px;
+  font-family: "Roboto Medium";
+  font-size: 30px;
+}
+
+.contacts__list {
+  list-style-type: none;
+}
+
+.contacts__item {
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #E5E5E5;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.contacts__item::before {
+  margin-right: 36px;
+}
+
+.phone::before {
+  content: url('../../assets/images/footer-icon-phone.png');
+}
+
+.email::before {
+  content: url('../../assets/images/footer-icon-email.png');
+}
+
+.skype::before {
+  content: url('../../assets/images/footer-icon-skype.png');
+}
+
+.geolocation::before {
+  content: url('../../assets/images/footer-icon-geolocation.png');
+}
+
+.contacts__item p {
+  display: inline-block;
+  vertical-align: top;
+}

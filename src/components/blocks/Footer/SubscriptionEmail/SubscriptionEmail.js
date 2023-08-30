@@ -1,5 +1,5 @@
-import Button from '../ui/Button';
 import style from './SubscriptionEmail.module.css';
+import Button from '../../../ui/Button/Button';
 
 export default function SubscriptionEmail() {
   return (

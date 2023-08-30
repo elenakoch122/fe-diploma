@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import Wrapper from '../blocks/Wrapper';
-import style from './MenuNav.module.css'
+import style from './MenuNav.module.css';
+
+import Wrapper from '../../Wrapper';
 
 export default function MenuNav() {
   return (

@@ -1,11 +1,13 @@
-import style from './Footer.module.css';
-import Contacts from './blocks/Contacts';
-import SubscriptionEmail from './blocks/SubscriptionEmail';
-import SubscriptionSocials from './blocks/SubscriptionSocials';
-import Wrapper from './blocks/Wrapper';
-import Logo from './ui/Logo';
-import iconUp from '../assets/images/footer-icon-up.png';
 import { Link } from 'react-router-dom';
+import style from './Footer.module.css';
+
+import Contacts from './Contacts/Contacts';
+import SubscriptionEmail from './SubscriptionEmail/SubscriptionEmail';
+import SubscriptionSocials from './SubscriptionSocials/SubscriptionSocials';
+import Wrapper from '../../Wrapper';
+import Logo from '../../ui/Logo/Logo';
+
+import iconUp from '../../../assets/images/footer-icon-up.png';
 
 export default function Footer() {
   return (

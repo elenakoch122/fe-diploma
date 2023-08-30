@@ -1,5 +1,5 @@
 import style from './About.module.css';
-import Wrapper from './blocks/Wrapper';
+import Wrapper from '../../Wrapper';
 
 export default function About() {
   return (

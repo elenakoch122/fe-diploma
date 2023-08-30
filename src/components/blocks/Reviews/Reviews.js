@@ -1,7 +1,9 @@
 import style from './Reviews.module.css';
-import Wrapper from './blocks/Wrapper';
-import Review from './elements/Review';
-import img1 from '../assets/images/reviewer1.png';
+
+import Wrapper from '../../Wrapper';
+import Review from '../../elements/Review/Review';
+
+import img1 from '../../../assets/images/reviewer1.png';
 
 export default function Reviews() {
   return (

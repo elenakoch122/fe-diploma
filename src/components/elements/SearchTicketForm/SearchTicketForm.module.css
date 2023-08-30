@@ -3,6 +3,10 @@
   background-color: rgba(41, 41, 41, .8);
 }
 
+.form_search {
+  display: flex;
+}
+
 .form__label {
   display: block;
   margin-bottom: 15px;

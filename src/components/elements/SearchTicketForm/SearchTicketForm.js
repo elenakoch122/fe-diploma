@@ -1,15 +1,19 @@
-import Button from '../ui/Button';
-import style from './SearchTicketForm.module.css';
-import reverseIcon from '../../assets/images/icon_reverse_white.png';
-import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
-import { setInitialFromTo, setValue } from '../../slices/date';
+import { useDispatch, useSelector } from 'react-redux';
+import style from './SearchTicketForm.module.css';
 import moment from 'moment';
 
-export default function SearchTicketForm() {
+import Button from '../../ui/Button/Button';
+import { setInitialFromTo, setValue } from '../../../slices/date';
+import reverseIcon from '../../../assets/images/icon_reverse_white.png';
+
+export default function SearchTicketForm({ page }) {
   const { from, to } = useSelector(state => state.date);
   const [classesFromTo, setClassesFromTo] = useState(`${style.form__input} ${style.dateTooltip}`);
+  const [classesForm, setClassesForm] = useState(style.form);
   const dispatch = useDispatch();
+
+  if (page) setClassesForm(`${style.form} ${style.form_search}`);
 
   const onFocusHandler = () => setClassesFromTo(style.form__input);
 

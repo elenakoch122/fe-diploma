@@ -1,7 +1,7 @@
 .advantages {
   position: relative;
   padding: 69px 0 90px;
-  background-image: url('../assets/images/background-advantages.png');
+  background-image: url('../assets/images/advantages-background.png');
 }
 
 .advantages::before {

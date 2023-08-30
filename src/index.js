@@ -5,9 +5,11 @@ import './assets/fonts/fonts.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import MainPage from './pages/MainPage';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+
+import MainPage from './components/pages/MainPage/MainPage';
+import TicketSelectionPage from './components/pages/TicketSelectionPage/TicketSelectionPage';
 
 const router = createBrowserRouter([
   {
@@ -18,10 +20,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <MainPage />,
       },
-      // {
-      //   path: "/about",
-      //   element: <MainPage />,
-      // },
+      {
+        path: "/ticket_selection",
+        element: <TicketSelectionPage />,
+      },
     ],
     // path: "/",
     // element: <MainPage />,

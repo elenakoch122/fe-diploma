@@ -1,9 +1,15 @@
-.logo {
+.header {
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+}
+
+.header__logo {
   position: relative;
   padding-top: 15px;
 }
 
-.logo::before {
+.header__logo::before {
   content: "";
   position: absolute;
   top: 0;

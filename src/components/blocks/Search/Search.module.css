@@ -1,0 +1,10 @@
+.search {
+  padding-top: 267px;
+  background-image: url('../assets/images/search-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search__wrapper {
+  margin: 0 auto;
+}

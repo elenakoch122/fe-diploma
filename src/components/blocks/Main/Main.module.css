@@ -1,6 +1,6 @@
 .main {
-  /* height: 100vh; */
-  background-image: url('../assets/images/background-main.png');
+  padding-top: 406px;
+  background-image: url('../assets/images/main-background.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
+  /* margin-top: 250px; */
 }
 
 .main__contentTagline {

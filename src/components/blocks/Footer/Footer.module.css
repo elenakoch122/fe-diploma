@@ -16,6 +16,14 @@
   padding: 22px 0 33px;
 }
 
+.footer__upButton {
+  transition: .3s;
+}
+
+.footer__upButton:hover {
+  transform: scale(1.5);
+}
+
 .footer__year {
   font-family: "Roboto Light";
   font-size: 24px;

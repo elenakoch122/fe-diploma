@@ -12,7 +12,7 @@ export default function SubscriptionSocials() {
         {socials.map(s => (
           <li className={style.subSocials__item} key={s.name}>
             <Link to={s.link} className={style.subSocials__link} title={`Подписаться на ${s.name}`} rel="noopener noreferrer" target='_blank'>
-              <img src={s.icon} alt={`Подписаться на ${s.name}`} />
+              <img className={style.subSocials__img} src={s.icon} alt={`Подписаться на ${s.name}`} />
             </Link>
           </li>
         ))}

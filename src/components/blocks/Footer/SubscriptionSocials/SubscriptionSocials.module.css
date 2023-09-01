@@ -5,3 +5,11 @@
 .subSocials__item:not(:last-child) {
   margin-right: 48px;
 }
+
+.subSocials__img {
+  transition: .3s;
+}
+
+.subSocials__img:hover {
+  transform: scale(1.5);
+}

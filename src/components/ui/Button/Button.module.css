@@ -5,8 +5,15 @@
   line-height: 28px;
   color: #292929;
   background-color: #FFA800;
+  border: 1px solid #FFA800;
   border-radius: 5px;
   text-transform: uppercase;
+  transition: .3s;
+}
+
+.orange:hover {
+  color: #FFA800;
+  background-color: #292929;
 }
 
 .black {
@@ -18,4 +25,10 @@
   border: 1px solid #FFF;
   border-radius: 3px;
   text-transform: uppercase;
+  transition: .3s;
+}
+
+.black:hover {
+  color: #FFA800;
+  border-color: #FFA800;
 }

@@ -24,7 +24,7 @@ export default function Footer() {
       <Wrapper>
         <div className={style.footer__wrapper}>
           <Logo />
-          <HashLink to="#top" title="Перейти наверх страницы"><img src={iconUp} alt="" /></HashLink>
+          <HashLink to="#top" title="Перейти наверх страницы"><img className={style.footer__upButton} src={iconUp} alt="" /></HashLink>
           <span className={style.footer__year}>2018 WEB</span>
         </div>
       </Wrapper>

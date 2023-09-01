@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import style from './Footer.module.css';
 
 import Contacts from './Contacts/Contacts';
@@ -24,7 +24,7 @@ export default function Footer() {
       <Wrapper>
         <div className={style.footer__wrapper}>
           <Logo />
-          <Link to="#" title="Перейти наверх страницы"><img src={iconUp} alt="" /></Link>
+          <HashLink to="#top" title="Перейти наверх страницы"><img src={iconUp} alt="" /></HashLink>
           <span className={style.footer__year}>2018 WEB</span>
         </div>
       </Wrapper>

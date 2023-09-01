@@ -1,6 +1,6 @@
 import Main from '../../blocks/Main/Main';
 import About from '../../blocks/About/About';
-import Advantages from '../../blocks/Advantages/Advantages';
+import HowItWorks from '../../blocks/HowItWorks/HowItWorks';
 import Reviews from '../../blocks/Reviews/Reviews';
 
 export default function MainPage() {
@@ -9,7 +9,7 @@ export default function MainPage() {
     <>
       <Main />
       <About />
-      <Advantages />
+      <HowItWorks />
       <Reviews />
     </>
   );

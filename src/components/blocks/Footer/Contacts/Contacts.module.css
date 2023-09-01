@@ -23,22 +23,23 @@
 }
 
 .phone::before {
-  content: url('../../assets/images/footer-icon-phone.png');
+  content: url('../../../../assets/images/footer-icon-phone.png');
 }
 
 .email::before {
-  content: url('../../assets/images/footer-icon-email.png');
+  content: url('../../../../assets/images/footer-icon-email.png');
 }
 
 .skype::before {
-  content: url('../../assets/images/footer-icon-skype.png');
+  content: url('../../../../assets/images/footer-icon-skype.png');
 }
 
 .geolocation::before {
-  content: url('../../assets/images/footer-icon-geolocation.png');
+  content: url('../../../../assets/images/footer-icon-geolocation.png');
 }
 
 .contacts__item p {
   display: inline-block;
   vertical-align: top;
+  white-space: pre-line;
 }

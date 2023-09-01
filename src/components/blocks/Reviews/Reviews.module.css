@@ -10,3 +10,9 @@
   color: #292929;
   text-transform: uppercase;
 }
+
+.reviews__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 134px;
+}

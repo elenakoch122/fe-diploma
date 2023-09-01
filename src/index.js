@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import './index.css';
 import './assets/fonts/fonts.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import { store } from './store/store';
 
 import MainPage from './components/pages/MainPage/MainPage';

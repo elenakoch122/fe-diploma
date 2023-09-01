@@ -11,3 +11,20 @@
   font-family: "Roboto Medium";
   font-size: 30px;
 }
+
+div.App .carousel .control-dots .dot {
+  width: 19px;
+  height: 19px;
+  background-color: #E5E5E5;
+  box-shadow: none;
+  opacity: 1;
+}
+
+div.App .carousel .control-dots .dot.selected {
+  background-color: #C4C4C4;
+}
+
+/* a.active {
+  color: #FFA800;
+  cursor: default;
+} */

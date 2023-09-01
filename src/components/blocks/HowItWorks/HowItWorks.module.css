@@ -1,10 +1,10 @@
-.advantages {
+.howItWorks {
   position: relative;
   padding: 69px 0 90px;
-  background-image: url('../assets/images/advantages-background.png');
+  background-image: url('../../../assets/images/howItWorks-background.png');
 }
 
-.advantages::before {
+.howItWorks::before {
   content: "";
   position: absolute;
   top: 0;
@@ -15,21 +15,21 @@
   z-index: -1;
 }
 
-.advantages__wrapper {
+.howItWorks__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 97px;
 }
 
-.advantages__title {
+.howItWorks__title {
   font-family: "Roboto Medium";
   font-size: 36px;
   line-height: normal;
   text-transform: uppercase;
 }
 
-.advantages__link {
+.howItWorks__link {
   padding: 15px 76px;
   font-family: "Roboto Bold";
   font-size: 24px;
@@ -40,17 +40,17 @@
   cursor: pointer;
 }
 
-.advantages__list {
+.howItWorks__list {
   display: flex;
   justify-content: center;
   list-style-type: none;
 }
 
-.advantages__item {
+.howItWorks__item {
   width: 226px;
   text-align: center;
 }
 
-.advantages__item:not(:last-child) {
+.howItWorks__item:not(:last-child) {
   margin-right: 150px;
 }

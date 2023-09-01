@@ -5,6 +5,10 @@
   color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input {
   position: relative;
   padding: 19px 21px;

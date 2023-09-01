@@ -22,13 +22,13 @@
 }
 
 .direction input {
-  background-image: url(../../assets/images/icon_geolocation.png);
+  background-image: url('../../../assets/images/icon_geolocation.png');
   background-repeat: no-repeat;
   background-position: 95%;
 }
 
 .date input[type="text"] {
-  background-image: url(../../assets/images/icon_calendar.png);
+  background-image: url('../../../assets/images/icon_calendar.png');
   background-repeat: no-repeat;
   background-position: 95%;
 }

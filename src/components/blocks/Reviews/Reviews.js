@@ -1,21 +1,32 @@
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { v4 as uuidv4 } from 'uuid';
 import style from './Reviews.module.css';
 
 import Wrapper from '../../Wrapper';
 import Review from '../../elements/Review/Review';
 
-import img1 from '../../../assets/images/reviewer1.png';
+import { reviews } from '../../../data/reviews';
 
 export default function Reviews() {
   return (
-    <section className={style.reviews}>
+    <section className={style.reviews} id='reviews'>
       <Wrapper>
         <h1 className={style.reviews__title}>Отзывы</h1>
 
-        <Review
-          reviewer="Екатерина Вальнова"
-          text="Доброжелательные подсказки на всех этапах помогут правильно заполнить поля и без затруднений купить авиа или ж/д билет, даже если вы заказываете онлайн билет впервые."
-          img={img1}
-        />
+        <Carousel
+          showThumbs={false}
+          showArrows={false}
+          showStatus={false}
+        >
+          {reviews.map(item => (
+            <div className={style.reviews__content} key={uuidv4()}>
+              {item.map(r => (
+                <Review review={r} key={r.id}/>
+              ))}
+            </div>
+          ))}
+        </Carousel>
       </Wrapper>
     </section>
   );

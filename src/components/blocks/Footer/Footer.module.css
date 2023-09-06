@@ -4,8 +4,8 @@
 
 .footer__info {
   display: flex;
-  justify-content: space-between;
-  padding: 49px 17.7% 52px;
+  justify-content: center;
+  padding: 49px 0 52px;
   border-bottom: 1px solid #E5E5E5;
 }
 

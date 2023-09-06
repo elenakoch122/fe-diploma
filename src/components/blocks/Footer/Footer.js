@@ -6,7 +6,6 @@ import SubscriptionEmail from './SubscriptionEmail/SubscriptionEmail';
 import SubscriptionSocials from './SubscriptionSocials/SubscriptionSocials';
 import Wrapper from '../../Wrapper';
 import Logo from '../../ui/Logo/Logo';
-
 import iconUp from '../../../assets/images/footer-icon-up.png';
 
 export default function Footer() {

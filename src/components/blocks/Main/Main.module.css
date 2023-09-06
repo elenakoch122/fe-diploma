@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 250px; */
 }
 
 .main__contentTagline {
@@ -17,7 +16,6 @@
   font-family: "Roboto Thin";
   font-size: 72px;
   line-height: 84px;
-  color: #FFFFFF;
 }
 
 .main__contentTagline em {

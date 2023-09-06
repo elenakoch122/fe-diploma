@@ -25,8 +25,6 @@ const router = createBrowserRouter([
         element: <TicketSelectionPage />,
       },
     ],
-    // path: "/",
-    // element: <MainPage />,
   },
 ]);
 

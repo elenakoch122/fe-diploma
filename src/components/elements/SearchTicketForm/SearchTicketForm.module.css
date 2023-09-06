@@ -1,10 +1,32 @@
 .form {
-  padding: 79px 24px 60px;
   background-color: rgba(41, 41, 41, .8);
 }
 
+.form_main {
+  padding: 79px 24px 60px;
+}
+
 .form_search {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 28px 44px 76px;
+}
+
+.form__main__wrapper {
+  margin-bottom: 92px;
+}
+
+.form__search__wrapper {
   display: flex;
+  margin-bottom: 47px;
+}
+
+.form__main__direction {
+  margin-bottom: 61px;
+}
+
+.form__search__direction {
+  margin-right: 35px;
 }
 
 .form__label {
@@ -35,21 +57,11 @@
 
 .form__input {
   width: 325px;
-  /* padding: 19px 21px;
-  border-radius: 3px; */
-}
-
-.direction {
-  margin-bottom: 61px;
 }
 
 .form__icon {
   margin: 0 8px;
   align-self: center;
-}
-
-.date {
-  margin-bottom: 92px;
 }
 
 .form__button__wrapper {

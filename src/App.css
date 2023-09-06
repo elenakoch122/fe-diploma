@@ -1,9 +1,6 @@
-.App {
-  /* position: relative; */
-}
-
 .wrapper {
-  margin: 0 12.7%;
+  width: 1410px;
+  margin: 0 auto;
 }
 
 .footer__title {
@@ -24,7 +21,6 @@ div.App .carousel .control-dots .dot.selected {
   background-color: #C4C4C4;
 }
 
-/* a.active {
-  color: #FFA800;
-  cursor: default;
-} */
+#dateFrom {
+  margin-right: 40px;
+}

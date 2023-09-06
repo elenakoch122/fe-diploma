@@ -6,7 +6,7 @@ export default function Main() {
     <main className={style.main} id='main'>
       <div className={style.main__content}>
         <p className={style.main__contentTagline}>Вся жизнь - <em>путешествие!</em></p>
-        <SearchTicketForm />
+        <SearchTicketForm page='main' />
       </div>
     </main>
   );

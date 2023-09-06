@@ -38,6 +38,11 @@
   outline: 1px solid #fff;
   text-decoration: none;
   cursor: pointer;
+  transition: .3s;
+}
+
+.howItWorks__link:hover {
+  background-color: #a77038;
 }
 
 .howItWorks__list {

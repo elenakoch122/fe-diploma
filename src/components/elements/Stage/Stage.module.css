@@ -1,0 +1,30 @@
+.stage {
+  position: relative;
+  padding: 34px 68px 34px 90px;
+  font-family: "Roboto Bold";
+  font-size: 30px;
+}
+
+.stage::after {
+  content: '';
+  z-index: 1;
+  position: absolute;
+  top: 17px;
+  right: -40px;
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-color: inherit;
+  border: 1px solid #E5E5E5;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+}
+
+.stage__number {
+  margin-right: 28px;
+  padding: 5px 17px;
+  font-size: 36px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}

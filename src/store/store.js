@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import dateReduser from '../slices/date';
+import dateReducer from '../slices/date';
+import stagesReducer from '../slices/stages';
 
 export const store = configureStore({
   reducer: {
-    date: dateReduser,
+    date: dateReducer,
+    stages: stagesReducer,
   },
 });

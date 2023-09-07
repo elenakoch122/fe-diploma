@@ -1,0 +1,29 @@
+.stageBar {
+  overflow: hidden;
+}
+
+.stageBar__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.stageBar__list::before,
+.stageBar__list::after {
+  content: '';
+  position: absolute;
+  width: 3000px;
+  height: 111px;
+
+}
+
+.stageBar__list::before {
+  background-color: #FFA800;
+  left: -3044px;
+}
+
+.stageBar__list::after {
+  background-color: #3E3C41;
+  right: -3042px;
+  z-index: 1;
+}

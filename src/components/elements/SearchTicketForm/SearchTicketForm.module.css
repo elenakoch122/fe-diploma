@@ -49,13 +49,13 @@
   background-position: 95%;
 }
 
-.date input[type="text"] {
+.date input {
   background-image: url('../../../assets/images/icon_calendar.png');
   background-repeat: no-repeat;
   background-position: 95%;
 }
 
-.form__input {
+.form input {
   width: 325px;
 }
 
@@ -66,19 +66,4 @@
 
 .form__button__wrapper {
   text-align: right;
-}
-
-.dateTooltip {
-  position: relative;
-}
-
-.dateTooltip::after {
-  content: 'ДД/ММ/ГГ';
-  position: absolute;
-  top: 19px;
-  left: 21px;
-  font-family: "Roboto Regular";
-  font-size: 18px;
-  color: #E5E5E5;
-  background-color: #fff;
 }

@@ -24,3 +24,7 @@ div.App .carousel .control-dots .dot.selected {
 #dateFrom {
   margin-right: 40px;
 }
+
+.order {
+  display: flex;
+}

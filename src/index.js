@@ -9,7 +9,9 @@ import reportWebVitals from './reportWebVitals';
 import { store } from './store/store';
 
 import MainPage from './components/pages/MainPage/MainPage';
-import TicketSelectionPage from './components/pages/TicketSelectionPage/TicketSelectionPage';
+import OrderPage from './components/pages/OrderPage/OrderPage';
+import SuccessPage from './components/pages/SuccessPage/SuccessPage';
+import TicketSelection from './components/blocks/TicketSelection/TicketSelection';
 
 const router = createBrowserRouter([
   {
@@ -17,12 +19,22 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "",
         element: <MainPage />,
       },
       {
-        path: "/ticket_selection",
-        element: <TicketSelectionPage />,
+        path: "order",
+        element: <OrderPage />,
+        children: [
+          {
+            path: "ticket_selection",
+            element: <TicketSelection />,
+          },
+        ],
+      },
+      {
+        path: "success",
+        element: <SuccessPage />,
       },
     ],
   },

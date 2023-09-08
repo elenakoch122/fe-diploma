@@ -1,0 +1,8 @@
+.filter {
+  padding: 43px 30px 34px;
+  background-color: #3E3C41;
+}
+
+.filter input[type='date'] {
+  width: 295px;
+}

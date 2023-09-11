@@ -1,0 +1,17 @@
+.option {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.option:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.option__name {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+}
+
+.option__switch {
+  justify-self: end;
+}

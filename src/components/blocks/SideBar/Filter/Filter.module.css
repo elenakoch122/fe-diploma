@@ -1,8 +1,34 @@
 .filter {
-  padding: 43px 30px 34px;
+  /* padding: 43px 0 34px; */
   background-color: #3E3C41;
+}
+
+.filter__block {
+  /* padding: 30px; */
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.filter__block:nth-child(1) {
+  padding: 43px 30px 33px;
+}
+
+.filter__block:nth-child(2) {
+  padding: 25px 30px 21px 60px;
+}
+
+.filter__label {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Roboto Light";
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFFFFF;
 }
 
 .filter input[type='date'] {
   width: 295px;
+}
+
+.filter input[type='date']:not(:last-child) {
+  margin-bottom: 26px;
 }

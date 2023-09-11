@@ -20,7 +20,7 @@ export default function SearchTicketForm({ page }) {
   };
 
   return (
-    <form className={`${style.form} ${style[`form_${page}`]}`} onSubmit={onSubmitForm}>
+    <form className={`${style.form} ${style[`form_${page}`]}`} onSubmit={onSubmitForm} id="search-form">
       <div className={style?.[`form__${page}__wrapper`]}>
         <div className={style?.[`form__${page}__direction`]}>
           <label className={style.form__label} htmlFor="direction">Направление</label>

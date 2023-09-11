@@ -21,7 +21,7 @@ div.App .carousel .control-dots .dot.selected {
   background-color: #C4C4C4;
 }
 
-#dateFrom {
+#search-form #dateFrom {
   margin-right: 40px;
 }
 

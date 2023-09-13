@@ -27,4 +27,5 @@ div.App .carousel .control-dots .dot.selected {
 
 .order {
   display: flex;
+  padding: 95px 193px;
 }

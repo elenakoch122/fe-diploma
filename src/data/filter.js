@@ -34,3 +34,15 @@ export const options = [
     id: uuidv4(),
   }
 ];
+
+export const price = {
+  min: 1920,
+  max: 7000,
+  step: 10
+};
+
+export const time = {
+  min: 0,
+  max: 24,
+  step: 1
+};

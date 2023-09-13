@@ -1,0 +1,16 @@
+.title {
+  margin-bottom: 16px;
+  font-family: "Roboto Regular";
+  font-size: 30px;
+}
+
+.captions__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.caption {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+}

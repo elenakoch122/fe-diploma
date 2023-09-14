@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.header__title {
+  font-family: "Roboto Bold";
+  font-size: 30px;
+}
+
+.header__title::before {
+  content: '\27A1';
+  margin-right: 12px;
+  padding: 0 5px;
+  font-size: 22px;
+  color: #3E3C41;
+  background-color: #FFA800;
+  border-radius: 5px;
+}
+
+.header__collapse {
+  width: 20px;
+  height: 20px;
+  font-family: "Roboto Bold";
+  font-size: 16px;
+  line-height: 0;
+  color: #C4C4C4;
+  background-color: transparent;
+  border: 2px solid #C4C4C4;
+  border-radius: 5px;
+}
+
+.title {
+  margin-bottom: 15px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+}
+
+.title + div {
+  margin-bottom: 46px;
+}
+
+.title.arrival {
+  text-align: end;
+}
+

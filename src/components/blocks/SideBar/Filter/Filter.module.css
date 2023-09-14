@@ -19,6 +19,10 @@
   padding: 37px 30px 55px;
 }
 
+.filter__block:nth-child(n+4) {
+  padding: 24px 30px 30px;
+}
+
 .filter input[type='date'] {
   width: 295px;
 }
@@ -26,7 +30,3 @@
 .filter input[type='date']:not(:last-child) {
   margin-bottom: 26px;
 }
-
-/* .filter__range {
-  accent-color: #FFA800;
-} */

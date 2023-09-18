@@ -10,8 +10,8 @@ export default function Filter() {
       <div className={style.filter__block}><DateFilter /></div>
       <div className={style.filter__block}><OptionsFilter /></div>
       <div className={style.filter__block}><PriceFilter /></div>
-      <div className={style.filter__block}><TimeFilter title='Туда' /></div>
-      <div className={style.filter__block}><TimeFilter title='Обратно' /></div>
+      <div className={style.filter__block}><TimeFilter title='Туда' arrow='from' /></div>
+      <div className={style.filter__block}><TimeFilter title='Обратно' arrow='to' /></div>
     </div>
   );
 }

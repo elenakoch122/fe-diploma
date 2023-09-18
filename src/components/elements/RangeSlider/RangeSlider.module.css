@@ -12,6 +12,10 @@
   border-radius: 50%;
 }
 
+.thumb:nth-child(2) .caption {
+  left: -10px;
+}
+
 .caption {
   position: relative;
   bottom: -30px;

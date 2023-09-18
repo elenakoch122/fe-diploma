@@ -9,12 +9,12 @@ export default function OrderPage() {
     <>
       <Search />
       <StageBar />
-      <div className="order">
-        <Wrapper>
+      <Wrapper>
+        <div className="order">
           <SideBar />
           <Outlet />
-        </Wrapper>
-      </div>
+        </div>
+      </Wrapper>
     </>
   );
 }

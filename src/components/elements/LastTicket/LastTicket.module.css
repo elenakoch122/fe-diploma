@@ -5,10 +5,16 @@
   background-color: #fff;
   border: 1px solid #C4C4C4;
   box-shadow: 0px 2px 2px 0px rgba(62, 60, 65, 0.25);
+  transition: .3s;
+  cursor: pointer;
 }
 
 .lastTicket:not(:last-child) {
   margin-bottom: 17px;
+}
+
+.lastTicket:hover {
+  border-color: #FFA800;
 }
 
 .lastTicket__place__city {

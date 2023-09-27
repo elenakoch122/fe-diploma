@@ -1,0 +1,59 @@
+.ticketSelection {
+  flex: 1;
+}
+
+.ticketSelection__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 47px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #928F94;
+}
+
+.ticketSelection__found,
+.installations__label,
+.installations__view,
+.installations__view__item {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #928F94;
+}
+
+.ticketSelection__installations {
+  display: flex;
+}
+
+.installations__label, .installations__view {
+  margin-right: 8px;
+}
+
+.installations__select {
+  margin-right: 50px;
+  font-family: inherit;
+  font-size: inherit;
+  color: #292929;
+  border: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.installations__option {
+  color: #292929;
+}
+
+.installations__view__list {
+  display: flex;
+}
+
+.installations__view__item {
+  cursor: pointer;
+}
+
+.installations__view__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.active {
+  color: #292929;
+}

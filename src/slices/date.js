@@ -11,7 +11,7 @@ const dateSlice = createSlice({
   name: 'date',
   initialState,
   reducers: {
-    setValue: (state, action) => {
+    setDate: (state, action) => {
       if (action.payload.id === 'dateFrom') {
         state.from = action.payload.value;
         if (!state.to) state.to = action.payload.value;
@@ -27,5 +27,5 @@ const dateSlice = createSlice({
   },
 });
 
-export const { setValue, setInitialFromTo } = dateSlice.actions;
+export const { setDate, setInitialFromTo } = dateSlice.actions;
 export default dateSlice.reducer;

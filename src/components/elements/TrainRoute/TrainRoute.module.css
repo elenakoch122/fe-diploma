@@ -1,0 +1,35 @@
+.route {
+  display: flex;
+  margin-bottom: 66px;
+}
+
+.route div:not(:last-child) {
+  margin-right: 50px;
+}
+
+.route__time {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  color: #000;
+}
+
+.route__city, .route__station {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+}
+
+.route__city {
+  color: #292929;
+}
+
+.route__station {
+  color: #928F94;
+}
+
+.route__duration {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #C4C4C4;
+}

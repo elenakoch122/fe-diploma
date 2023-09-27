@@ -1,0 +1,38 @@
+.seats {
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+  align-items: baseline;
+  margin-bottom: 24px;
+}
+
+.seats__type {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  color: #3E3C41;
+}
+
+.seats__count {
+  font-family: "Roboto Medium";
+  font-size: 16px;
+  color: #FFA800;
+  text-align: center;
+}
+
+.seats__price {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  color: #928F94;
+  text-align: end;
+}
+
+.seats__price__value {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  color: #2D2B2F;
+}
+
+.seats__price__currency {
+  font-family: inherit;
+  font-size: 24px;
+  color: inherit;
+}

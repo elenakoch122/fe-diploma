@@ -3,7 +3,7 @@ import { contacts } from '../../../../data/contacts';
 
 export default function Contacts() {
   return (
-    <div className={style.contacts} id='contacts'>
+    <address className={style.contacts} id='contacts'>
       <h2 className="footer__title">Свяжитесь с нами</h2>
 
       <ul className={style.contacts__list}>
@@ -13,6 +13,6 @@ export default function Contacts() {
           </li>
         ))}
       </ul>
-    </div>
+    </address>
   );
 }

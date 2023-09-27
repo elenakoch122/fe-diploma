@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import style from './DateInput.module.css';
-import { setInitialFromTo, setValue } from '../../../slices/date';
+import { setInitialFromTo, setDate } from '../../../slices/date';
 import moment from 'moment';
 
 export default function DateInput({ id, }) {
@@ -10,7 +10,7 @@ export default function DateInput({ id, }) {
   const dispatch = useDispatch();
 
   const onFocus = () => setClassesFromTo(style.form__input);
-  const onChange = (e) => dispatch(setValue({ value: e.target.value, id: e.target.id }));
+  const onChange = (e) => dispatch(setDate({ value: e.target.value, id: e.target.id }));
 
   const onBlur = (e) => {
     if (!e.target.value) {

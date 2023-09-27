@@ -67,3 +67,7 @@ ul {
 address {
   font-style: normal;
 }
+
+svg path {
+  transition: .3s;
+}

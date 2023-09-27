@@ -3,6 +3,7 @@ import style from './TicketSelection.module.css';
 
 import { setSort, setViewLimit } from "../../../slices/filter";
 import Ticket from "../../elements/Ticket/Ticket";
+import Pagination from "../../elements/Pagination/Pagination";
 
 export default function TicketSelection() {
   document.title = 'Выбор поезда';
@@ -53,6 +54,8 @@ export default function TicketSelection() {
         <Ticket />
         <Ticket />
       </div>
+
+      <Pagination />
     </section>
   );
 }

@@ -1,0 +1,32 @@
+.pagination {
+  display: flex;
+  justify-content: end;
+  margin-top: 142px;
+}
+
+.pagination__block {
+  padding: 19px 31px;
+  border-radius: 5px;
+  border: 2px solid #C4C4C4;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.pagination__block:not(:last-child) {
+  margin-right: 35px;
+}
+
+.pagination__block:hover {
+  color: #FFA800;
+  border-color: #FFA800;
+}
+
+.pagination__block:hover > svg path {
+  fill: #FFA800;
+}
+
+.page {
+  font-family: "Roboto Bold";
+  font-size: 30px;
+  color: #928F94;
+}

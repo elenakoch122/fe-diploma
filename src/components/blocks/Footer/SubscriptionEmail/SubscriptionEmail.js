@@ -8,7 +8,12 @@ export default function SubscriptionEmail() {
 
       <label className={style.subEmail__label} htmlFor="subEmail">Будьте в курсе событий</label>
       <input className={style.subEmail__input} type="email" name="" id="subEmail" placeholder='e-mail' />
-      <Button text="Отправить" type="black" />
+
+      <Button
+        text="Отправить"
+        color="transparent"
+        type="send"
+      />
     </div>
   );
 }

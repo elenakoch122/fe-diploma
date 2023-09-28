@@ -1,0 +1,11 @@
+.seatsSelection__title {
+  margin-bottom: 48px;
+  font-family: "Roboto Medium";
+  font-size: 30px;
+  color: #292929;
+  text-transform: uppercase;
+}
+
+.seatsSelection_button {
+  text-align: end;
+}

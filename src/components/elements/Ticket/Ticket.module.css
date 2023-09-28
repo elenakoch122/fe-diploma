@@ -1,54 +1,21 @@
 .ticket {
-  display: flex;
-  margin-bottom: 47px;
-  border: 1px solid #E4E0E9;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
+  background-color: #fff;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.ticket:hover {
-  border-color: #FFA800;
+.ticket__direction {
+  padding: 36px 19px 32px;
 }
 
-.ticket__train {
-  padding: 58px 42px 92px 26px;
-  background-color: #E4E0E9;
+.ticket__direction svg {
+  margin-right: 10px;
 }
 
-.ticket__train__icon {
-  margin: 0 auto 17px;
-  display: block;
+.ticket__direction button {
+  vertical-align: top;
 }
 
-.ticket__train__number {
-  margin-bottom: 15px;
-  font-family: "Roboto Bold";
-  font-size: 24px;
-  color: #3E3C41;
-  text-align: center;
-}
-
-.ticket__train__direction {
-  font-family: "Roboto Regular";
-  font-size: 16px;
-  color: #292929;
-}
-
-.ticket__routes {
-  padding: 54px 55px 0 39px;
-  border-right: 1px solid #E5E5E5;
-}
-
-.ticket__seats {
-  flex: 1;
-  padding: 37px 22px 23px 27px;
-}
-
-.ticket__options {
-  margin-top: 31px;
-  margin-bottom: 19px;
+.arrival {
   text-align: end;
-}
-
-.ticket__options img:not(:last-child) {
-  margin-right: 15px;
 }

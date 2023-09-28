@@ -56,7 +56,8 @@ export default function SearchTicketForm({ page }) {
       <div className={style.form__button__wrapper}>
         <Button
           text="Найти билеты"
-          type="orange"
+          color="orange"
+          type="find"
         />
       </div>
     </form>

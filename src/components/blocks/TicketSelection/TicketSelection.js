@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import style from './TicketSelection.module.css';
 
 import { setSort, setViewLimit } from "../../../slices/filter";
-import Ticket from "../../elements/Ticket/Ticket";
+import TicketCard from "../../elements/TicketCard/TicketCard";
 import Pagination from "../../elements/Pagination/Pagination";
 
 export default function TicketSelection() {
@@ -50,9 +50,9 @@ export default function TicketSelection() {
       </div>
 
       <div className={style.ticketSelection__tickets}>
-        <Ticket />
-        <Ticket />
-        <Ticket />
+        <TicketCard />
+        <TicketCard />
+        <TicketCard />
       </div>
 
       <Pagination />

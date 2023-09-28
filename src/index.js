@@ -12,6 +12,8 @@ import MainPage from './components/pages/MainPage/MainPage';
 import OrderPage from './components/pages/OrderPage/OrderPage';
 import SuccessPage from './components/pages/SuccessPage/SuccessPage';
 import TicketSelection from './components/blocks/TicketSelection/TicketSelection';
+import SeatsSelection from './components/blocks/SeatsSelection/SeatsSelection';
+import Passengers from './components/blocks/Passengers/Passengers';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
           {
             path: "ticket_selection",
             element: <TicketSelection />,
+          },
+          {
+            path: "seats_selection",
+            element: <SeatsSelection />,
+          },
+          {
+            path: "passengers",
+            element: <Passengers />,
           },
         ],
       },

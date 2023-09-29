@@ -1,6 +1,5 @@
 .route {
   display: flex;
-  margin-bottom: 66px;
 }
 
 .route div:not(:last-child) {

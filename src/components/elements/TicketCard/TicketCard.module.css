@@ -1,8 +1,10 @@
 .ticketCard {
   display: flex;
   margin-bottom: 47px;
+  background-color: #fff;
   border: 1px solid #E4E0E9;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
+  cursor: default;
 }
 
 .ticketCard:hover {
@@ -36,6 +38,10 @@
 .ticketCard__routes {
   padding: 54px 55px 0 39px;
   border-right: 1px solid #E5E5E5;
+}
+
+.ticketCard__routes > div {
+  margin-bottom: 66px;
 }
 
 .ticketCard__seats {

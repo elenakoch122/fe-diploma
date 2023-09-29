@@ -1,0 +1,44 @@
+.card {
+  padding: 20px 41px 19px 36px;
+  border: 1px solid #fff;
+  cursor: default;
+}
+
+.card:hover {
+  border-color: #FFA800;
+}
+
+.card:focus-within {
+  background-color: #F7F6F6;
+  border: 1px solid #F7F6F6;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__select {
+  width: 100%;
+  margin-bottom: 23px;
+  padding: 15px 17px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #292929;
+  border: 1px solid #928F94;
+  border-radius: 5px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.card__select option {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #292929;
+}
+
+.card__tooltip {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  color: #928F94;
+}
+
+.card:focus-within .card__tooltip {
+  color: #000;
+}

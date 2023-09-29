@@ -81,3 +81,24 @@
   font-size: 18px;
   color: #000;
 }
+
+.ticket__count {
+  padding: 40px 0 49px;
+  border-bottom: 1px dotted #C4C4C4;
+}
+
+.ticket__count__title {
+  margin-left: 19px;
+  margin-bottom: 15px;
+  font-family: "Roboto Bold";
+  font-size: 30px;
+  color: #292929;
+}
+
+.ticket__count__wrapper {
+  display: flex;
+}
+
+.ticket__count__wrapper > div {
+  flex: 1;
+}

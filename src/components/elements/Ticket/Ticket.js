@@ -4,6 +4,7 @@ import style from './Ticket.module.css';
 import trainIcon from '../../../assets/images/ticket-train-icon-orange.png';
 import clockIcon from '../../../assets/images/ticket-clock-icon.png';
 import TrainRoute from '../TrainRoute/TrainRoute';
+import CountCard from './CountCard/CountCard';
 
 export default function Ticket() {
   return (
@@ -47,6 +48,15 @@ export default function Ticket() {
             <p>9 часов</p>
             <p>42 минуты</p>
           </div>
+        </div>
+      </div>
+
+      <div className={style.ticket__count}>
+        <h4 className={style.ticket__count__title}>Количество билетов</h4>
+        <div className={style.ticket__count__wrapper}>
+          <CountCard passenger="adult"/>
+          <CountCard passenger="children" />
+          <CountCard passenger="baby" />
         </div>
       </div>
     </div>

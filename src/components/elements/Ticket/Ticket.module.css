@@ -87,9 +87,9 @@
   border-bottom: 1px dotted #C4C4C4;
 }
 
-.ticket__count__title {
+.ticket__subtitle {
   margin-left: 19px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-family: "Roboto Bold";
   font-size: 30px;
   color: #292929;
@@ -101,4 +101,36 @@
 
 .ticket__count__wrapper > div {
   flex: 1;
+}
+
+.ticket__carriage {
+  padding: 27px 0 32px;
+}
+
+.ticket__carriage__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ticket__carriage__item {
+  text-align: center;
+}
+
+.ticket__carriage__item svg {
+  margin-bottom: 18px;
+}
+
+.ticket__carriage__item:hover path {
+  fill: #FFA800;
+}
+
+.ticket__carriage__item__caption {
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #292929;
+  transition: .3s;
+}
+
+.ticket__carriage__item:hover .ticket__carriage__item__caption {
+  color: #FFA800;
 }

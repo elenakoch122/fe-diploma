@@ -103,34 +103,156 @@
   flex: 1;
 }
 
-.ticket__carriage {
+.ticket__carriages {
   padding: 27px 0 32px;
 }
 
-.ticket__carriage__list {
+.ticket__carriages__types__list {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 26px;
 }
 
-.ticket__carriage__item {
+.ticket__carriages__types__item {
   text-align: center;
 }
 
-.ticket__carriage__item svg {
+.ticket__carriages__types__item svg {
   margin-bottom: 18px;
 }
 
-.ticket__carriage__item:hover path {
+.ticket__carriages__types__item:hover path {
   fill: #FFA800;
 }
 
-.ticket__carriage__item__caption {
+.ticket__carriages__types__item__caption {
   font-family: "Roboto Regular";
   font-size: 24px;
   color: #292929;
   transition: .3s;
 }
 
-.ticket__carriage__item:hover .ticket__carriage__item__caption {
+.ticket__carriages__types__item:hover .ticket__carriages__types__item__caption {
   color: #FFA800;
+}
+
+.ticket__carriages__quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 5px 33px;
+  background-color: rgba(255, 168, 0, 0.44);
+}
+
+.ticket__carriages__quantity__wrapper {
+  display: flex;
+  align-items: baseline;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #2D2B2F;
+}
+
+.ticket__carriages__list {
+  display: flex;
+  margin-left: 8px;
+}
+
+.ticket__carriages__item {
+  margin-right: 8px;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+}
+
+.ticket__carriages__item.active {
+  color: #fff;
+}
+
+/* .ticket__carriages__item:active {
+  color: #fff;
+} */
+
+.ticket__carriages__quantity__caption {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  color: #292929;
+}
+
+.ticket__carriage__header {
+  display: flex;
+}
+
+.ticket__carriage__number {
+  align-self: start;
+  padding: 30px 37px;
+  font-family: "Roboto Bold";
+  font-size: 72px;
+  line-height: 1;
+  color: #292929;
+  background-color: rgba(255, 168, 0, 0.44);
+}
+
+.ticket__carriage__number span {
+  display: block;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #292929;
+}
+
+.ticket__carriage__info {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 33px 59px 0 85px;
+}
+
+.ticket__carriage__seats h5,
+.ticket__carriage__price h5,
+.ticket__carriage__services h5 {
+  margin-bottom: 17px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #928F94;
+}
+
+.ticket__carriage__seats__total {
+  color: #000;
+}
+
+.ticket__carriage__seats p {
+  margin-bottom: 24px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #000;
+}
+
+.ticket__carriage__seats__quantity {
+  margin-left: 5px;
+  font-family: "Roboto Bold";
+  color: inherit;
+}
+
+.ticket__carriage__price__value {
+  margin-bottom: 24px;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  color: #000;
+}
+
+.ticket__carriage__price__currency {
+  margin-left: 10px;
+  color: #928F94;
+}
+
+.ticket__carriage__services span {
+  color: #C4C4C4;
+}
+
+.ticket__carriage__services svg {
+  margin-right: 13px;
+}
+
+.ticket__carriage__services svg:hover {
+
 }

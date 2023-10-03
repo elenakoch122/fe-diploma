@@ -8,6 +8,7 @@ import CountCard from './CountCard/CountCard';
 
 import conditioning from '../../../assets/svg/conditioning-in-frame.svg';
 import { icons } from '../../../data/icons';
+import CarriageScheme from './CarriageScheme/CarriageScheme';
 
 export default function Ticket() {
   const onCarriageNumberClick = (e) => {
@@ -147,15 +148,31 @@ export default function Ticket() {
 
               <div className={style.ticket__carriage__services}>
                 <h5>Обслуживание <span>ФПК</span></h5>
-                {icons.conditioning.withFrame}
-                {icons.conditioning.withFrame}
-                {icons.conditioning.withFrame}
-                {icons.conditioning.withFrame}
+                <ul className={style.ticket__carriage__services__list}>
+                  <li className={`${style.ticket__carriage__services__item} ${style.active}`} title='Кондиционер'>{icons.conditioning.withFrame}</li>
+                  <li className={style.ticket__carriage__services__item}>{icons.conditioning.withFrame}</li>
+                  <li className={style.ticket__carriage__services__item}>{icons.conditioning.withFrame}</li>
+                  <li className={`${style.ticket__carriage__services__item} ${style.disable}`}>{icons.conditioning.withFrame}</li>
+                </ul>
               </div>
             </div>
           </div>
 
-          <div className={style.ticket__carriage__scheme}></div>
+          <div className={style.ticket__carriage__demand}>
+            11 человек выбирают места в этом поезде
+          </div>
+
+          <div className={style.ticket__carriage__scheme}>
+            <CarriageScheme type="sit"/>
+            {/* <CarriageScheme type="reserved"/> */}
+            {/* <CarriageScheme type="coupe"/> */}
+            {/* <CarriageScheme type="lux"/> */}
+          </div>
+
+          <div className={style.ticket__carriage__sum}>
+            {(8080).toLocaleString('ru')}
+            <span className={style.ticket__carriage__sum__currency}>₽</span>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,36 @@
+.common {
+  position: absolute;
+  font-family: "Roboto Bold";
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.sit {
+  width: 27px;
+  height: 19px;
+}
+
+.sit.odd {
+  top: 54px;
+}
+
+.sit.even {
+  top: 32px;
+}
+
+/* .reserved .carriage__seat {}
+.coupe .carriage__seat {}
+.lux .carriage__seat {} */
+
+.enable {
+  background-color: red;
+  /* background-color: #f2f2f2; */
+  color: #000;
+}
+
+.disable {
+  /* background-color: #ccc; */
+  background-color: red;
+  color: #e8e8e8;
+}

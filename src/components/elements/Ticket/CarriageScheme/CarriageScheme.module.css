@@ -1,0 +1,81 @@
+.carriage {
+  position: relative;
+  width: 100%;
+  height: 145px;
+  background-repeat: no-repeat;
+}
+
+.carriage.sit {
+  background-image: url('../../../../assets/images/scheme-seat.png');
+}
+
+.carriage.reserved {
+  background-image: url('../../../../assets/images/scheme-reserved.png');
+}
+
+.carriage.coupe {
+  background-image: url('../../../../assets/images/scheme-coupe.png');
+}
+
+.carriage.lux {
+  background-image: url('../../../../assets/images/scheme-lux.png');
+}
+
+.carriage__number {
+  position: absolute;
+  left: 39px;
+  width: 35px;
+  height: 25px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+.carriage__seat {
+  position: absolute;
+  font-family: "Roboto Bold";
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.sit .carriage__seat {
+  width: 27px;
+  height: 19px;
+
+  left: 144px;
+}
+
+/* .reserved .carriage__seat {}
+.coupe .carriage__seat {}
+.lux .carriage__seat {} */
+
+.enable {
+  background-color: red;
+  /* background-color: #f2f2f2; */
+  color: #000;
+}
+
+.disable {
+  /* background-color: #ccc; */
+  background-color: red;
+  color: #e8e8e8;
+}
+
+.odd {
+  top: 54px;
+}
+
+.even {
+  top: 33px;
+}

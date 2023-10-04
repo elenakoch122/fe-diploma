@@ -2,26 +2,9 @@
   position: absolute;
   font-family: "Roboto Bold";
   text-align: center;
+  outline-color: #FFA800;
   cursor: pointer;
-  transition: .3s;
 }
-
-.sit {
-  width: 27px;
-  height: 19px;
-}
-
-.sit.odd {
-  top: 54px;
-}
-
-.sit.even {
-  top: 32px;
-}
-
-/* .reserved .carriage__seat {}
-.coupe .carriage__seat {}
-.lux .carriage__seat {} */
 
 .enable {
   background-color: red;
@@ -29,8 +12,17 @@
   color: #000;
 }
 
+.enable:hover {
+  outline: 1px solid #FFA800;
+  z-index: 5;
+}
+
 .disable {
-  /* background-color: #ccc; */
-  background-color: red;
+  background-color: #ccc;
   color: #e8e8e8;
+  cursor: default;
+}
+
+.active {
+  background-color: #FFA800;
 }

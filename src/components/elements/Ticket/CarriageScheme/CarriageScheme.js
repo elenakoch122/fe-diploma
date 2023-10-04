@@ -2,6 +2,7 @@ import style from './CarriageScheme.module.css';
 
 import Sit from './carriageTypes/Sit';
 import Reserved from './carriageTypes/Reserved';
+import Coupe from './carriageTypes/Coupe';
 
 export default function CarriageScheme({ type }) {
   return (
@@ -9,6 +10,7 @@ export default function CarriageScheme({ type }) {
       <div className={style.carriage__number}>07</div>
       {type === 'sit' && <Sit />}
       {type === 'reserved' && <Reserved />}
+      {type === 'coupe' && <Coupe />}
     </div>
   );
 }

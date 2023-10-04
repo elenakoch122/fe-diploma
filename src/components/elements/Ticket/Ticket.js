@@ -165,8 +165,8 @@ export default function Ticket() {
           <div className={style.ticket__carriage__scheme}>
             {/* <CarriageScheme type="sit"/> */}
             {/* <CarriageScheme type="reserved"/> */}
-            <CarriageScheme type="coupe"/>
-            {/* <CarriageScheme type="lux"/> */}
+            {/* <CarriageScheme type="coupe"/> */}
+            <CarriageScheme type="lux"/>
           </div>
 
           <div className={style.ticket__carriage__sum}>

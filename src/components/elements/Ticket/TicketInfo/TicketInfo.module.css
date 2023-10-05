@@ -1,0 +1,62 @@
+.ticket__info {
+  display: flex;
+}
+
+.ticket__info div {
+  background-color: #F7F6F6;
+}
+
+.ticket__info>div:not(:last-child) {
+  margin-right: 1px;
+}
+
+.ticket__info__train,
+.ticket__info__duration {
+  display: flex;
+  align-items: center;
+}
+
+.ticket__info__train {
+  padding: 17px 15px 16px 35px;
+}
+
+.ticket__info__train img {
+  width: 30px;
+  margin-right: 30px;
+  object-fit: contain;
+}
+
+.ticket__info__train__number {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  color: #3E3C41;
+}
+
+.ticket__info__train__direction {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  color: #292929;
+}
+
+.ticket__info__schedule {
+  padding: 28px 41px 26px 36px;
+  flex: 1;
+}
+
+.ticket__info__schedule time:has(+ img) {
+  opacity: 0;
+}
+
+.ticket__info__duration {
+  padding: 42px 70px 41px 35px;
+}
+
+.ticket__info__duration img {
+  margin-right: 10px;
+}
+
+.ticket__info__duration p {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #000;
+}

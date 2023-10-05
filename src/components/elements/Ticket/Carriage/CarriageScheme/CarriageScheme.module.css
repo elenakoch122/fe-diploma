@@ -6,19 +6,19 @@
 }
 
 .carriage.sit {
-  background-image: url('../../../../assets/images/scheme-seat.png');
+  background-image: url('../../../../../assets/images/scheme-seat.png');
 }
 
 .carriage.reserved {
-  background-image: url('../../../../assets/images/scheme-reserved.png');
+  background-image: url('../../../../../assets/images/scheme-reserved.png');
 }
 
 .carriage.coupe {
-  background-image: url('../../../../assets/images/scheme-coupe.png');
+  background-image: url('../../../../../assets/images/scheme-coupe.png');
 }
 
 .carriage.lux {
-  background-image: url('../../../../assets/images/scheme-lux.png');
+  background-image: url('../../../../../assets/images/scheme-lux.png');
 }
 
 .carriage__number {

@@ -6,26 +6,20 @@
   cursor: pointer;
 }
 
+.header div:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.header svg {
+  width: 32px;
+  height: 26px;
+  margin-right: 12px;
+}
+
 .header__title {
   font-family: "Roboto Bold";
   font-size: 30px;
-}
-
-.from::before {
-  content: '\27A1';
-}
-
-.to::before {
-  content: '\2B05';
-}
-
-.from::before, .to::before {
-  margin-right: 12px;
-  padding: 0 5px;
-  font-size: 22px;
-  color: #3E3C41;
-  background-color: #FFA800;
-  border-radius: 5px;
 }
 
 .header__collapse {
@@ -54,4 +48,3 @@
 .title.arrival {
   text-align: end;
 }
-

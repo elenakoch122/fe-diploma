@@ -4,7 +4,7 @@ import Stage from '../../elements/Stage/Stage';
 import style from './StageBar.module.css';
 
 export default function StageBar() {
-  const stages = useSelector(state => state.stages);
+  const stages = useSelector(state => state.stages.stages);
 
   return (
     <div className={style.stageBar}>

@@ -1,0 +1,20 @@
+.details {
+  background-color: #3E3C41;
+  margin-bottom: 96px;
+}
+
+.details__title {
+  padding: 35px 44px 30px;
+  font-family: "Roboto Medium";
+  font-size: 30px;
+  color: #E5E5E5;
+  text-transform: uppercase;
+}
+
+.details__title, .details__block {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.details__block {
+  padding: 16px 27px 45px;
+}

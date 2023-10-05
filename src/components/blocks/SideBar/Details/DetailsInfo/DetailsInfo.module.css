@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 32px;
   cursor: pointer;
 }
 
@@ -18,8 +18,14 @@
 }
 
 .header__title {
+  margin-right: 18px;
   font-family: "Roboto Bold";
   font-size: 30px;
+}
+
+.header time, .train__number__title, .train__name__title {
+  font-family: "Roboto Regular";
+  font-size: 18px;
 }
 
 .header__collapse {
@@ -35,16 +41,30 @@
   text-align: center;
 }
 
-.title {
-  margin-bottom: 15px;
-  font-family: "Roboto Regular";
+.train__number, .train__name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.train__number__title, .train__name__title {
+  color: #E5E5E5;
+}
+
+.train__number__value {
+  font-family: "Roboto Bold";
   font-size: 24px;
 }
 
-.title + div {
+.train__name {
   margin-bottom: 46px;
 }
 
-.title.arrival {
+.train__name__value {
   text-align: end;
+}
+
+.train__name__value p {
+  font-family: "Roboto Bold";
+  font-size: 16px;
 }

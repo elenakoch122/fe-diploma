@@ -1,5 +1,4 @@
 import style from './LastTicket.module.css';
-
 import { services } from '../../../data/icons'
 
 export default function LastTicket() {

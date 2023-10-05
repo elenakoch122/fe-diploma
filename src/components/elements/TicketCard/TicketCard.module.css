@@ -55,6 +55,6 @@
   text-align: end;
 }
 
-.ticketCard__options img:not(:last-child) {
+.ticketCard__options svg:not(:last-child) {
   margin-right: 15px;
 }

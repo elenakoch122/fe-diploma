@@ -6,13 +6,17 @@ import clockIcon from '../../../assets/images/ticket-clock-icon.png';
 import TrainRoute from '../TrainRoute/TrainRoute';
 import CountCard from './CountCard/CountCard';
 
-import conditioning from '../../../assets/svg/conditioning-in-frame.svg';
-import { icons } from '../../../data/icons';
+import { services } from '../../../data/icons';
 import CarriageScheme from './CarriageScheme/CarriageScheme';
-
+// разбить на компоненты!!!!!!!!!!!!!!!!!!!
 export default function Ticket() {
   const onCarriageNumberClick = (e) => {
     console.log(e.target);
+  };
+
+  const onServiceClick = (e) => {
+    const isActive = e.target.className.includes('active');
+    // !isActive ? setClasses(initClasses + ' ' + style.active) : setClasses(initClasses);
   };
 
   return (
@@ -149,10 +153,34 @@ export default function Ticket() {
               <div className={style.ticket__carriage__services}>
                 <h5>Обслуживание <span>ФПК</span></h5>
                 <ul className={style.ticket__carriage__services__list}>
-                  <li className={`${style.ticket__carriage__services__item} ${style.active}`} title='Кондиционер'>{icons.conditioning.withFrame}</li>
-                  <li className={style.ticket__carriage__services__item}>{icons.conditioning.withFrame}</li>
-                  <li className={style.ticket__carriage__services__item}>{icons.conditioning.withFrame}</li>
-                  <li className={`${style.ticket__carriage__services__item} ${style.disable}`}>{icons.conditioning.withFrame}</li>
+                  <li
+                    className={`${style.ticket__carriage__services__item} ${style.active}`}
+                    title={services.conditioning.title}
+                    onClick={onServiceClick}
+                  >
+                    {services.conditioning.withFrame}
+                  </li>
+
+                  <li
+                    className={style.ticket__carriage__services__item}
+                    title={services.wifi.title}
+                  >
+                    {services.wifi.withFrame}
+                  </li>
+
+                  <li
+                    className={`${style.ticket__carriage__services__item} ${style.disable}`}
+                    title={services.bedclothes.title}
+                  >
+                    {services.bedclothes.withFrame}
+                  </li>
+
+                  <li
+                    className={style.ticket__carriage__services__item}
+                    title={services.food.title}
+                  >
+                    {services.food.withFrame}
+                  </li>
                 </ul>
               </div>
             </div>

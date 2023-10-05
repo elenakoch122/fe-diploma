@@ -39,7 +39,7 @@
   align-self: baseline;
 }
 
-.lastTicket__options__icon:not(:last-child) {
+.lastTicket__options svg:not(:last-child) {
   margin-right: 8px;
 }
 

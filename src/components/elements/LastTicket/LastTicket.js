@@ -1,6 +1,6 @@
 import style from './LastTicket.module.css';
 
-import conditioning from '../../../assets/svg/conditioning.svg'
+import { services } from '../../../data/icons'
 
 export default function LastTicket() {
   return (
@@ -12,9 +12,10 @@ export default function LastTicket() {
       <p className={`${style.lastTicket__place__station} ${style.column_2}`}>Московский<br />вокзал</p>
 
       <div className={style.lastTicket__options}>
-        <img className={style.lastTicket__options__icon} src={conditioning} alt="" />
-        <img className={style.lastTicket__options__icon} src={conditioning} alt="" />
-        <img className={style.lastTicket__options__icon} src={conditioning} alt="" />
+        {services.conditioning.withoutFrame}
+        {services.wifi.withoutFrame}
+        {services.bedclothes.withoutFrame}
+        {services.food.withoutFrame}
       </div>
 
       <div className={`${style.lastTicket__cost} ${style.column_2}`}>

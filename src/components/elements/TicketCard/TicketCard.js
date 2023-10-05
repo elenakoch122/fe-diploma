@@ -1,16 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 import style from './TicketCard.module.css';
 
 import TrainRoute from '../TrainRoute/TrainRoute';
 import TicketSeats from './TicketSeats/TicketSeats';
+import Button from '../../ui/Button/Button';
 
 import train from '../../../assets/images/icon_train.png';
-import conditioning from '../../../assets/svg/conditioning.svg';
-import Button from '../../ui/Button/Button';
-import { useNavigate } from 'react-router-dom';
+import { services } from '../../../data/icons';
 
 export default function TicketCard() {
   const navigate = useNavigate();
-
   const onChooseSeatsClick = () => navigate('/order/seats_selection');
 
   return (
@@ -36,9 +35,10 @@ export default function TicketCard() {
         <TicketSeats type='Люкс' />
 
         <div className={style.ticketCard__options}>
-          <img src={conditioning} alt="" />
-          <img src={conditioning} alt="" />
-          <img src={conditioning} alt="" />
+          {services.conditioning.withoutFrame}
+          {services.wifi.withoutFrame}
+          {services.bedclothes.withoutFrame}
+          {services.food.withoutFrame}
         </div>
 
         <Button

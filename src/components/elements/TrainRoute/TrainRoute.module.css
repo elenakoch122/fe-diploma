@@ -9,7 +9,22 @@
 .route__time {
   font-family: "Roboto Bold";
   font-size: 24px;
+}
+
+.dark .route__time {
   color: #000;
+}
+
+.light .route__time {
+  color: #fff;
+}
+
+.route__date {
+  display: block;
+  margin-bottom: 17px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #928F94;
 }
 
 .route__city, .route__station {
@@ -17,8 +32,12 @@
   font-size: 16px;
 }
 
-.route__city {
+.dark .route__city {
   color: #292929;
+}
+
+.light .route__city {
+  color: #fff;
 }
 
 .route__station {
@@ -30,5 +49,8 @@
   margin-bottom: 10px;
   font-family: "Roboto Regular";
   font-size: 18px;
+}
+
+.route__duration {
   color: #C4C4C4;
 }

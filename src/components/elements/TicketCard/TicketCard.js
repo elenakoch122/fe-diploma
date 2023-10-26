@@ -24,8 +24,8 @@ export default function TicketCard() {
       </div>
 
       <div className={style.ticketCard__routes}>
-        <TrainRoute />
-        <TrainRoute />
+        <TrainRoute theme='dark' />
+        <TrainRoute theme='dark' />
       </div>
 
       <div className={style.ticketCard__seats}>

@@ -18,7 +18,7 @@ export default function TicketInfo() {
       </div>
 
       <div className={style.ticket__info__schedule}>
-        <TrainRoute />
+        <TrainRoute theme='dark' />
       </div>
 
       <div className={style.ticket__info__duration}>

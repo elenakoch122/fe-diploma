@@ -20,7 +20,7 @@ export default function LastTicket() {
       <div className={`${style.lastTicket__cost} ${style.column_2}`}>
         от
         <span className={style.lastTicket__cost__value}>3 500</span>
-        <span className={style.lastTicket__cost__symbol}>₽</span>
+        <span className={style.lastTicket__cost__currency}>₽</span>
       </div>
     </div>
   );

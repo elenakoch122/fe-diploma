@@ -16,5 +16,31 @@
 }
 
 .details__block {
-  padding: 16px 27px 45px;
+  padding: 16px 27px 40px;
+}
+
+.details__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px 27px;
+}
+
+.details__total__name {
+  font-family: "Roboto Bold";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.details__total__cost__value {
+  margin-right: 15px;
+  font-family: "Roboto Bold";
+  font-size: 48px;
+  color: #FFA800;
+}
+
+.details__total__cost__currency {
+  font-family: "Roboto Regular";
+  font-size: 48px;
+  color: #E5E5E5;
 }

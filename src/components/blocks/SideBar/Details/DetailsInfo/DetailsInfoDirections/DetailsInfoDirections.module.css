@@ -1,0 +1,29 @@
+.train__number, .train__name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.train__number__title, .train__name__title {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #E5E5E5;
+}
+
+.train__number__value {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+}
+
+.train__name {
+  margin-bottom: 46px;
+}
+
+.train__name__value {
+  text-align: end;
+}
+
+.train__name__value p {
+  font-family: "Roboto Bold";
+  font-size: 16px;
+}

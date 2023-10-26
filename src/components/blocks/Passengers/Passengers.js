@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux';
 import style from './Passengers.module.css';
 
 import { setColor } from '../../../slices/stages';
+import PassengerCard from '../../elements/PassengerCard/PassengerCard';
 
 export default function Passengers() {
   document.title = 'Пассажиры';
@@ -14,7 +15,7 @@ export default function Passengers() {
 
   return (
     <section className={style.passengers}>
-      HIIIIII
+      <PassengerCard />
     </section>
   );
 }

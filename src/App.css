@@ -33,3 +33,27 @@ div.App .carousel .control-dots .dot.selected {
   display: flex;
   padding: 95px 0 193px;
 }
+
+.label {
+  font-family: "Roboto Regular";
+  font-size: 16px;
+  color: #928F94;
+}
+
+.input {
+  display: block;
+  margin-top: 12px;
+  padding: 12px 15px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #292929;
+}
+
+.input::placeholder {
+  color: #C4C4C4;
+}
+
+.border-928F94-5px {
+  border: 1px solid #928F94;
+  border-radius: 5px;
+}

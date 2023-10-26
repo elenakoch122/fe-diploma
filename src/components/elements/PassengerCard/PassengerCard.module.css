@@ -1,0 +1,195 @@
+.card {
+  width: 958px;
+  margin-bottom: 43px;
+  background-color: #fff;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card__header, .card__info, .card__document {
+  border-bottom: 1px dotted #928F94;
+}
+
+.card__header {
+  display: flex;
+  padding: 40px 42px 30px 23px;
+  background-color: #F9F9F9;
+}
+
+.collapse {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  padding: 0 6px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  border: 1px solid #928F94;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.collapse_orange {
+  color: #FFA800;
+  border-color: #FFA800;
+}
+
+.collapse_grey {
+  color: #928F94;
+  border-color: #928F94;
+}
+
+.card__header__title {
+  display: inline-block;
+  font-family: "Roboto Regular";
+  font-size: 30px;
+  color: #292929;
+}
+
+.card__info {
+  padding: 38px 35px 31px;
+}
+
+.card__info__select, .card__info__name, .card__info__identification {
+  margin-bottom: 45px;
+}
+
+.card__info__select {
+  width: 280px;
+  padding: 12px 15px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #292929;
+  cursor: pointer;
+}
+
+.card__info__select option {
+  color: #292929;
+}
+
+.card__info__name, .card__info__identification {
+  display: flex;
+}
+
+.card__info__name label:not(:last-child),
+.card__info__identification label:not(:last-child) {
+  margin-right: 25px;
+}
+
+.card__info__name input {
+  width: 280px;
+}
+
+.card__info__identification input[type="radio"] {
+  display: inline;
+  width: 55px;
+  height: 55px;
+  opacity: 0;
+}
+
+.card__info__identification__radioWrapper {
+  display: flex;
+  width: 204px;
+}
+
+.card__info__identification__radioWrapper div {
+  flex: 1;
+  text-align: center;
+}
+
+.man, .woman {
+  position: relative;
+}
+
+.man::before {
+  content: 'М';
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px
+}
+
+.woman::before {
+  content: 'Ж';
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.man::before, .woman::before {
+  width: 102px;
+  height: 55px;
+  position: absolute;
+  right: -22px;
+  bottom: 4px;
+  font-family: "Roboto Black";
+  font-size: 30px;
+  line-height: 1.7;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #928F94;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+}
+
+.radioMan:checked + .man::before,
+.radioWoman:checked + .woman::before {
+  background-color: #FFA800;
+}
+
+.card__info__identification input[type="text"] {
+  width: 240px;
+}
+
+.card__info__limitedMobility {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+  accent-color: #FFA800;
+  cursor: pointer;
+}
+
+.checkboxLabel {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #292929;
+}
+
+.card__document {
+  display: flex;
+  padding: 37px 35px 33px;
+}
+
+.card__document label:not(:last-child) {
+  margin-right: 35px;
+}
+
+.card__document select, .card__document input {
+  width: 205px;
+}
+
+.card__document__select {
+  display: block;
+  margin-top: 12px;
+  padding: 16px 15px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #292929;
+  cursor: pointer;
+}
+
+.card__document__select option {
+  color: #292929;
+}
+
+.card__document input::placeholder {
+  font-size: 30px;
+}
+
+.card__validation {
+  padding: 37px 30px 28px;
+  text-align: end;
+}

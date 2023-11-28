@@ -1,0 +1,32 @@
+.card__document {
+  border-bottom: 1px dotted #928F94;
+}
+
+.card__document {
+  display: flex;
+  padding: 37px 35px 33px;
+}
+
+.card__document label:not(:last-child) {
+  margin-right: 35px;
+}
+
+.card__document__type {
+  padding: 15px;
+  font-size: 18px;
+  background-color: #F5F4F6;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.card__document__passport {
+  width: 205px;
+}
+
+.card__document__birthCertificate {
+  width: 300px;
+}
+
+.card__document input::placeholder {
+  font-size: 30px;
+}

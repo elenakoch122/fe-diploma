@@ -6,7 +6,7 @@
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.card__header, .card__info, .card__document {
+.card__header, .card__info {
   border-bottom: 1px dotted #928F94;
 }
 
@@ -156,37 +156,6 @@
   font-family: "Roboto Regular";
   font-size: 18px;
   color: #292929;
-}
-
-.card__document {
-  display: flex;
-  padding: 37px 35px 33px;
-}
-
-.card__document label:not(:last-child) {
-  margin-right: 35px;
-}
-
-.card__document select, .card__document input {
-  width: 205px;
-}
-
-.card__document__select {
-  display: block;
-  margin-top: 12px;
-  padding: 16px 15px;
-  font-family: "Roboto Regular";
-  font-size: 18px;
-  color: #292929;
-  cursor: pointer;
-}
-
-.card__document__select option {
-  color: #292929;
-}
-
-.card__document input::placeholder {
-  font-size: 30px;
 }
 
 .card__validation {

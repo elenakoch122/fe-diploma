@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import style from './PassengerCard.module.css';
+
 import Button from '../../ui/Button/Button';
+import PassengerCardDocument from './PassengerCardDocument/PassengerCardDocument';
 
 export default function PassengerCard() {
-  const [collapseClasses, setCollapseClasses] = useState(`${style.collapse} ${style.collapse_orange}`);
-  const [collapse, setCollapse] = useState('+');
+  const [collapseClasses, setCollapseClasses] = useState(`${style.collapse} ${style.collapse_grey}`);
+  const [collapse, setCollapse] = useState('—');
+  const [cardType, setCardType] = useState('child');
 
   const onClick = () => {
     setCollapse(prev => prev === '+' ? (
@@ -17,14 +20,19 @@ export default function PassengerCard() {
   };
 
   return (
-    <details className={style.card}>
+    <details className={style.card} open>
       <summary className={style.card__header}>
         <span className={collapseClasses} onClick={onClick}>{collapse}</span>
         <h2 className={style.card__header__title}>Пассажир 1</h2>
       </summary>
 
       <div className={style.card__info}>
-        <select className={`${style.card__info__select} border-928F94-5px`} name="" id="">
+        <select
+          className={`${style.card__info__select} border-928F94-5px`}
+          name=""
+          value={cardType}
+          onChange={(e) => setCardType(e.target.selectedOptions[0].value)}
+        >
           <option value="adult">Взрослый</option>
           <option value="child">Детский</option>
         </select>
@@ -74,31 +82,14 @@ export default function PassengerCard() {
         </div>
       </div>
 
-      <div className={style.card__document}>
-        <label className="label">
-          Тип документа
-          <select className={`${style.card__document__select} border-928F94-5px`} name="" id="">
-            <option value="passport">Паспорт РФ</option>
-            <option value="birth-certificate">Свидетельство о рождении</option>
-          </select>
-        </label>
-
-        <label className="label">
-          Серия
-          <input className="input border-928F94-5px" type="text" placeholder="_ _ _ _" />
-        </label>
-
-        <label className="label">
-          Номер
-          <input className="input border-928F94-5px" type="text" placeholder="_ _ _ _ _ _" />
-        </label>
-      </div>
+      {cardType === 'adult' ? <PassengerCardDocument type="passport" /> : <PassengerCardDocument type="birth-certificate" />}
 
       <div className={style.card__validation}>
         <Button
           text="Следующий пассажир"
           color="white"
           type="checkPassenger"
+          // callback={}
         />
       </div>
     </details>

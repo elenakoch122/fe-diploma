@@ -23,7 +23,14 @@
 }
 
 .stageBar__list::after {
-  background-color: #3E3C41;
   right: -3042px;
   z-index: 1;
+}
+
+.dark::after {
+  background-color: #3E3C41;
+}
+
+.orange::after {
+  background-color: #FFA800;
 }

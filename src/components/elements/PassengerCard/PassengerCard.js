@@ -3,6 +3,7 @@ import style from './PassengerCard.module.css';
 
 import Button from '../../ui/Button/Button';
 import PassengerCardDocument from './PassengerCardDocument/PassengerCardDocument';
+import Person from '../Person/Person';
 
 export default function PassengerCard() {
   const [collapseClasses, setCollapseClasses] = useState(`${style.collapse} ${style.collapse_grey}`);
@@ -29,7 +30,6 @@ export default function PassengerCard() {
       <div className={style.card__info}>
         <select
           className={`${style.card__info__select} border-928F94-5px`}
-          name=""
           value={cardType}
           onChange={(e) => setCardType(e.target.selectedOptions[0].value)}
         >
@@ -37,22 +37,7 @@ export default function PassengerCard() {
           <option value="child">Детский</option>
         </select>
 
-        <div className={style.card__info__name}>
-          <label className="label">
-            Фамилия
-            <input className="input border-928F94-5px" type="text" />
-          </label>
-
-          <label className="label">
-            Имя
-            <input className="input border-928F94-5px" type="text" />
-          </label>
-
-          <label className="label">
-            Отчество
-            <input className="input border-928F94-5px" type="text" />
-          </label>
-        </div>
+        <Person />
 
         <div className={style.card__info__identification}>
           <label className="label">

@@ -1,0 +1,12 @@
+.person {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.person label:not(:last-child) {
+  margin-right: 25px;
+}
+
+.person input {
+  width: 280px;
+}

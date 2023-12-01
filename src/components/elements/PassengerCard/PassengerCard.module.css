@@ -50,7 +50,7 @@
   padding: 38px 35px 31px;
 }
 
-.card__info__select, .card__info__name, .card__info__identification {
+.card__info__select, .card__info__identification {
   margin-bottom: 45px;
 }
 
@@ -67,17 +67,12 @@
   color: #292929;
 }
 
-.card__info__name, .card__info__identification {
+.card__info__identification {
   display: flex;
 }
 
-.card__info__name label:not(:last-child),
 .card__info__identification label:not(:last-child) {
   margin-right: 25px;
-}
-
-.card__info__name input {
-  width: 280px;
 }
 
 .card__info__identification input[type="radio"] {

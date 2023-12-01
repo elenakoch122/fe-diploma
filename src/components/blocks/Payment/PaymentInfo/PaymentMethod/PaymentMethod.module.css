@@ -1,0 +1,48 @@
+.online, .cash {
+  padding: 50px 35px 60px;
+}
+
+.online {
+  border-bottom: 1px dotted #928F94;
+}
+
+.checkbox__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.checkbox {
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+  accent-color: #FFA800;
+  cursor: pointer;
+}
+
+.checkboxLabel {
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #928F94;
+}
+
+.online__types {
+  display: flex;
+}
+
+.online__types p {
+  flex-basis: 180px;
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  color: #292929;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.online__types p:not(:last-child) {
+  margin-right: 100px;
+}
+
+.online__types p:hover {
+  color: #FFA800;
+}

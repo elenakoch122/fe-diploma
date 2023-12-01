@@ -1,0 +1,14 @@
+.payment__title, .payment__content:not(:last-child) {
+  border-bottom: 1px dotted #928F94;
+}
+
+.payment__title {
+  padding: 34px 35px;
+  font-family: "Roboto Regular";
+  font-size: 30px;
+  color: #292929;
+}
+
+.payment__content {
+  background-color: #fff;
+}

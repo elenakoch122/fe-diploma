@@ -58,3 +58,9 @@
 .active {
   color: #292929;
 }
+
+.ticketSelection__tickets__ticket {
+  margin-bottom: 47px;
+  border: 1px solid #E4E0E9;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
+}

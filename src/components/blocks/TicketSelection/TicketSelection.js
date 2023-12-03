@@ -1,9 +1,11 @@
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import style from './TicketSelection.module.css';
 
-import { setSort, setViewLimit } from "../../../slices/filter";
 import TicketCard from "../../elements/TicketCard/TicketCard";
 import Pagination from "../../elements/Pagination/Pagination";
+import { setSort, setViewLimit } from "../../../slices/filter";
+import { setColor } from "../../../slices/stages";
 
 export default function TicketSelection() {
   document.title = 'Выбор поезда';
@@ -13,8 +15,11 @@ export default function TicketSelection() {
   const sort = useSelector(state => state.filter.sort);
 
   const onViewClick = (e) => dispatch(setViewLimit(+e.target.textContent));
-
   const onSortChange = (e) => dispatch(setSort(e.target.value));
+
+  useEffect(() => {
+    dispatch(setColor(1));
+  }, [dispatch]);
 
   return (
     <section className={style.ticketSelection}>
@@ -50,9 +55,9 @@ export default function TicketSelection() {
       </div>
 
       <div className={style.ticketSelection__tickets}>
-        <TicketCard />
-        <TicketCard />
-        <TicketCard />
+        <div className={style.ticketSelection__tickets__ticket}><TicketCard /></div>
+        <div className={style.ticketSelection__tickets__ticket}><TicketCard /></div>
+        <div className={style.ticketSelection__tickets__ticket}><TicketCard /></div>
       </div>
 
       <Pagination />

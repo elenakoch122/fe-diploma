@@ -1,9 +1,6 @@
 .ticketCard {
   display: flex;
-  margin-bottom: 47px;
   background-color: #fff;
-  border: 1px solid #E4E0E9;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.30);
   cursor: default;
 }
 
@@ -57,4 +54,8 @@
 
 .ticketCard__options svg:not(:last-child) {
   margin-right: 15px;
+}
+
+.ticketCard__button {
+  text-align: end;
 }

@@ -5,6 +5,8 @@ import style from './Сheck.module.css';
 import { setColor } from '../../../slices/stages';
 import CheckData from './CheckData/CheckData';
 import TicketCard from '../../elements/TicketCard/TicketCard';
+import Passenger from './Passenger/Passenger';
+import Button from '../../ui/Button/Button';
 
 export default function Сheck() {
   document.title = 'Проверка';
@@ -22,17 +24,9 @@ export default function Сheck() {
 
   return (
     <section className={style.check}>
-      <CheckData title="Поезд">
-        <TicketCard />
-      </CheckData>
-
-      <CheckData title="Пассажиры">
-
-      </CheckData>
-
-      <CheckData title="Способ оплаты">
-
-      </CheckData>
+      <CheckData title="Поезд" content={<TicketCard />} />
+      <CheckData title="Пассажиры" content={<Passenger />} amount={5840} />
+      <CheckData title="Способ оплаты" content={<p className={style.check__payment}>Наличными</p>} />
     </section>
   );
 }

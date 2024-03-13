@@ -27,6 +27,15 @@ export default function Сheck() {
       <CheckData title="Поезд" content={<TicketCard />} />
       <CheckData title="Пассажиры" content={<Passenger />} amount={5840} />
       <CheckData title="Способ оплаты" content={<p className={style.check__payment}>Наличными</p>} />
+
+      <div className={style.check_button}>
+        <Button
+          text="Подтвердить"
+          color="orange"
+          type="next"
+          callback={onNextClick}
+        />
+      </div>
     </section>
   );
 }

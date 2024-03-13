@@ -1,0 +1,36 @@
+.passenger {
+  display: flex;
+  padding: 30px;
+}
+
+.passenger:not(:last-child) {
+  border-bottom: 1px dotted #E5E5E5
+}
+
+.passenger__figure {
+  margin-right: 32px;
+}
+
+.passenger__figure figcaption {
+  margin-top: 16px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #292929;
+}
+
+.passenger__info__name {
+  margin-bottom: 16px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #292929;
+}
+
+.passenger__info__data {
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  color: #928F94;
+}
+
+.passenger__info__data:not(:last-child) {
+  margin-bottom: 13px;
+}

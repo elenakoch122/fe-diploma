@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import style from './DetailsInfo.module.css';
-import { directions, others } from '../../../../../data/icons';
+import { directions, passengers } from '../../../../../data/icons';
 import DetailsInfoDirection from './DetailsInfoDirections/DetailsInfoDirections';
 import DetailsInfoPassengers from './DetailsInfoPassengers/DetailsInfoPassengers';
 
@@ -12,7 +12,7 @@ export default function DetailsInfo({ title, info = null }) {
     <details>
       <summary className={style.header} onClick={onClick}>
         <div>
-          {title === 'Туда' ? directions.arrowThere : title === 'Обратно' ? directions.arrowBack : others.passengers}
+          {title === 'Туда' ? directions.arrowThere : title === 'Обратно' ? directions.arrowBack : passengers.details}
           <h4 className={style.header__title}>{title}</h4>
           {info?.date && <time>{info.date}</time>}
         </div>

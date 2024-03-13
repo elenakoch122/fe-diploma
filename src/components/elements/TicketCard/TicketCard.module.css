@@ -34,7 +34,7 @@
 
 .ticketCard__routes {
   padding: 54px 55px 0 39px;
-  border-right: 1px solid #E5E5E5;
+  border-right: 1px dotted #E5E5E5;
 }
 
 .ticketCard__routes > div {

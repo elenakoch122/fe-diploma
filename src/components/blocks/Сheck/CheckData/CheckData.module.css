@@ -12,3 +12,44 @@
   color: #292929;
   border-bottom: 1px solid #C4C4C4;
 }
+
+.checkData__wrapper {
+  display: flex;
+}
+
+.checkData__content {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  flex: 3;
+  border-right: 1px dotted #E5E5E5;
+}
+
+.checkData__button {
+  flex: 1;
+  align-self: end;
+  padding: 0 25px 25px 25px;
+}
+
+.checkData__button__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.checkData__button__name {
+  font-family: "Roboto Regular";
+  font-size: 30px;
+  color: #292929;
+}
+
+.checkData__button__cost__value {
+  font-family: "Roboto Bold";
+  font-size: 30px;
+  color: #292929;
+}
+
+.checkData__button__cost__currency {
+  font-family: "Roboto Regular";
+  font-size: 30px;
+  color: #928F94;
+}

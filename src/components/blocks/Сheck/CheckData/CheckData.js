@@ -1,24 +1,38 @@
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import style from './CheckData.module.css';
 import Passenger from '../Passenger/Passenger';
 import Button from '../../../ui/Button/Button';
+import TicketCard from '../../../elements/TicketCard/TicketCard';
 
-export default function CheckData({ title, content, amount = null }) {
-  useEffect(() => console.log('content', content), []);
+export default function CheckData({ title, content = null, amount = null }) {
+  const navigate = useNavigate();
 
-  // const navigate = useNavigate();
-  // const onClickPassengersChange = () => navigate('/order/passengers');
+  const onClickTrainChange = () => navigate('/order/ticket_selection');
+  const onClickPassengersChange = () => navigate('/order/passengers');
+  const onClickPaymentChange = () => navigate('/order/payment');
+
+  const buttonCallback = () => {
+    switch (title) {
+      case 'Поезд': return onClickTrainChange;
+      case 'Пассажиры': return onClickPassengersChange;
+      default: return onClickPaymentChange;
+    }
+  };
 
   return (
     <div className={style.checkData}>
       <h2 className={style.checkData__title}>{title}</h2>
 
-      {content.type?.name === 'TicketCard' ? content : (
+      {title === 'Поезд' ? <TicketCard /> : (
         <div className={style.checkData__wrapper}>
+
           <div className={style.checkData__content}>
-            {content}
-            {content}
-            {content}
+            {title === 'Способ оплаты' ? (
+              <p className={style.checkData__payment}>{content}</p>
+            ) : (
+              content
+            )}
           </div>
 
           <div className={style.checkData__button}>
@@ -35,11 +49,14 @@ export default function CheckData({ title, content, amount = null }) {
               text='Изменить'
               color='white'
               type='changeTrain'
-              // callback={onClickPassengersChange}
+              callback={buttonCallback()}
             />
           </div>
+
         </div>
       )}
     </div>
   );
 }
+
+// добавить коллбэки кнопкам

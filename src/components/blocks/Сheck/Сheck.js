@@ -18,7 +18,7 @@ export default function Сheck() {
   }, [dispatch]);
 
   const onNextClick = () => {
-    // navigate('/order/check');
+    navigate('/success');
     window.scrollTo(0, 0);
   };
 

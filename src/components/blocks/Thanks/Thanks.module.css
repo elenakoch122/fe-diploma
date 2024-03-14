@@ -1,0 +1,15 @@
+.thanks {
+  padding-top: 515px;
+  padding-bottom: 230px;
+  background-image: url('../../../assets/images/thanks-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thanks__content {
+  font-family: "Roboto Bold";
+  font-size: 72px;
+}
+
+
+

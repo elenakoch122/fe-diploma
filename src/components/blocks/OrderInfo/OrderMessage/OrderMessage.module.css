@@ -1,0 +1,23 @@
+.orderMessage {
+  padding: 95px 205px 130px;
+}
+
+.orderMessage__name {
+  margin-bottom: 40px;
+  font-family: "Roboto Bold";
+  font-size: 36px;
+  color: #292929;
+}
+
+.orderMessage__text {
+  margin-bottom: 90px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #292929;
+}
+
+.orderMessage__thanks {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  color: #292929;
+}

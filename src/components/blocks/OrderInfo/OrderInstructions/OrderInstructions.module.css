@@ -1,0 +1,15 @@
+.orderInstructions {
+  padding: 40px 300px;
+  background-color: #F4F3F6;
+}
+
+.orderInstructions__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 45px;
+}
+
+.orderInstructions__item {
+  flex: 1;
+  text-align: center;
+}

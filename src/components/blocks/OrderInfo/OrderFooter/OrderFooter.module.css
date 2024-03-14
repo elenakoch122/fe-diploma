@@ -1,0 +1,39 @@
+.orderFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background-color: #FFA800;
+}
+
+.orderFooter__rating span {
+  margin-right: 30px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #292929;
+}
+
+.orderFooter__rating__list {
+  display: inline-flex;
+  column-gap: 20px;
+}
+
+.orderFooter__rating__star {
+  cursor: pointer;
+  transition: .3s;
+}
+
+.orderFooter__rating__star:hover {
+  fill: #fff;
+}
+
+.orderFooter__link {
+  font-family: "Roboto Bold";
+  font-size: 24px;
+  line-height: 2;
+  color: #292929;
+  background-color: #FFA800;
+  outline: 1px solid #3E3C41;
+  outline-offset: 10px;
+  text-transform: uppercase;
+  transition: .3s;
+}

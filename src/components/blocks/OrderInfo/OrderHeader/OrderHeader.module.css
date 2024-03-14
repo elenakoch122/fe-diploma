@@ -1,0 +1,20 @@
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px 50px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.orderHeader__number,
+.orderHeader__cost__value {
+  font-family: "Roboto Bold";
+  font-size: 36px;
+  color: #3E3C41;
+}
+
+.orderHeader__cost,
+.orderHeader__cost__currency {
+  font-family: "Roboto Regular";
+  font-size: 36px;
+  color: #928F94;
+}

@@ -58,5 +58,3 @@ export default function CheckData({ title, content = null, amount = null }) {
     </div>
   );
 }
-
-// добавить коллбэки кнопкам

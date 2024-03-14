@@ -24,6 +24,13 @@
   border-right: 1px dotted #E5E5E5;
 }
 
+.checkData__payment {
+  padding: 40px 30px 30px;
+  font-family: "Roboto Regular";
+  font-size: 24px;
+  color: #292929;
+}
+
 .checkData__button {
   flex: 1;
   align-self: end;

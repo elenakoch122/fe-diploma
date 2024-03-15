@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom';
 import style from './HowItWorks.module.css';
 
 import Wrapper from '../../Wrapper';
-import Advantage from '../../elements/Advantage/Advantage';
+import Point from '../../elements/Point/Point';
+import { v4 as uuidv4 } from 'uuid';
 
 import icon1 from '../../../assets/images/advantage-icon1.png';
 import icon2 from '../../../assets/images/advantage-icon2.png';
 import icon3 from '../../../assets/images/advantage-icon3.png';
 
 export default function HowItWorks() {
+  // выделить advList в отдельный файл с данными
   const advList = [
     { text: 'Удобный заказ на сайте', icon: icon1 },
     { text: 'Нет необходимости ехать в офис', icon: icon2 },
@@ -25,8 +27,8 @@ export default function HowItWorks() {
 
         <ul className={style.howItWorks__list}>
           {advList.map(a => (
-            <li className={style.howItWorks__item} key={a.text}>
-              <Advantage icon={a.icon} text={a.text} />
+            <li className={style.howItWorks__item} key={uuidv4()}>
+              <Point type="advantage" icon={a.icon} text={a.text} />
             </li>
           ))}
         </ul>

@@ -1,0 +1,8 @@
+.star {
+  cursor: pointer;
+  transition: .3s;
+}
+
+.star:hover, .filled {
+  fill: #fff;
+}

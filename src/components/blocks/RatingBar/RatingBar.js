@@ -22,3 +22,5 @@ export default function RatingBar() {
     </ul>
   );
 }
+
+// сделать эффект наведения

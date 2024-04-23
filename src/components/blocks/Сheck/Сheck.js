@@ -24,9 +24,9 @@ export default function Сheck() {
 
   return (
     <section className={style.check}>
-      <CheckData title="Поезд" content={<TicketCard />} />
+      <CheckData title="Поезд" />
       <CheckData title="Пассажиры" content={<Passenger />} amount={5840} />
-      <CheckData title="Способ оплаты" content={<p className={style.check__payment}>Наличными</p>} />
+      <CheckData title="Способ оплаты" content="Наличными" />
 
       <div className={style.check_button}>
         <Button
@@ -39,3 +39,5 @@ export default function Сheck() {
     </section>
   );
 }
+
+// передавать контент по пассажирам, по оплате из стора
